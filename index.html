@@ -37,10 +37,7 @@
       padding: 34px 0 50px;
     }
 
-    header {
-      text-align: center;
-      margin-bottom: 28px;
-    }
+    header { text-align: center; margin-bottom: 28px; }
 
     h1 {
       margin: 0;
@@ -65,10 +62,7 @@
       box-shadow: 0 12px 35px rgba(60,45,25,.08);
     }
 
-    .rules-card {
-      padding: 30px;
-      margin-bottom: 18px;
-    }
+    .rules-card { padding: 30px; margin-bottom: 18px; }
 
     .rules-card h2 {
       margin: 0 0 18px;
@@ -121,6 +115,24 @@
       border: 1px solid var(--accent);
     }
 
+    .character-list-button {
+      display: block;
+      margin: 16px auto 0;
+      padding: 8px 12px;
+      border: 0;
+      background: transparent;
+      color: var(--muted);
+      font-size: 13px;
+      font-weight: 400;
+    }
+
+    .character-list-button:hover {
+      background: transparent;
+      color: var(--accent-dark);
+      transform: none;
+      text-decoration: underline;
+    }
+
     .game-top {
       display: flex;
       justify-content: space-between;
@@ -130,10 +142,7 @@
       font-family: Arial, sans-serif;
     }
 
-    .counter {
-      color: var(--muted);
-      font-size: 14px;
-    }
+    .counter { color: var(--muted); font-size: 14px; }
 
     .character-card {
       padding: 28px 22px;
@@ -167,16 +176,30 @@
       text-align: center;
     }
 
-    .phrases {
-      display: grid;
-      gap: 12px;
-    }
+    .phrases { display: grid; gap: 12px; }
 
     .phrase {
       background: var(--card);
       border: 1px solid var(--border);
       border-radius: 16px;
       padding: 21px;
+      cursor: pointer;
+      transition: border-color .15s, background .15s, opacity .15s;
+      -webkit-tap-highlight-color: transparent;
+    }
+
+    .phrase:hover { border-color: var(--accent); }
+
+    .phrase.selected {
+      background: #eee9df;
+      border-color: var(--accent);
+      opacity: .72;
+    }
+
+    .phrase.selected .phrase-number::after {
+      content: " ✓ lida";
+      color: var(--success);
+      letter-spacing: 0;
     }
 
     .phrase-number {
@@ -210,20 +233,11 @@
       margin-top: 20px;
     }
 
-    .actions .next-button {
-      padding: 17px 28px;
-      font-size: 17px;
-    }
+    .actions .next-button { padding: 17px 28px; font-size: 17px; }
 
-    .end-card {
-      padding: 42px 25px;
-      text-align: center;
-    }
+    .end-card { padding: 42px 25px; text-align: center; }
 
-    .end-card h2 {
-      margin-top: 0;
-      font-size: 35px;
-    }
+    .end-card h2 { margin-top: 0; font-size: 35px; }
 
     .end-card p {
       color: var(--muted);
@@ -242,6 +256,62 @@
       line-height: 1.5;
     }
 
+    .modal {
+      position: fixed;
+      inset: 0;
+      z-index: 1000;
+      display: none;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+      background: rgba(37,35,31,.45);
+    }
+
+    .modal.open { display: flex; }
+
+    .modal-card {
+      width: min(520px, 100%);
+      max-height: min(80vh, 700px);
+      overflow: auto;
+      padding: 26px;
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 20px;
+      box-shadow: 0 20px 50px rgba(0,0,0,.18);
+    }
+
+    .modal-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 15px;
+      margin-bottom: 18px;
+    }
+
+    .modal-header h2 { margin: 0; font-size: 25px; }
+
+    .close-button {
+      padding: 7px 11px;
+      border-radius: 50%;
+      background: transparent;
+      color: var(--muted);
+      font-size: 20px;
+      line-height: 1;
+    }
+
+    .close-button:hover { background: #eee9df; color: var(--text); }
+
+    .character-list {
+      margin: 0;
+      padding-left: 25px;
+      columns: 2;
+      column-gap: 40px;
+      font-family: Arial, sans-serif;
+      line-height: 1.9;
+    }
+
+    .character-list li { break-inside: avoid; }
+
     @media (max-width: 600px) {
       .app { padding-top: 24px; }
       .rules-card { padding: 23px 20px; }
@@ -250,6 +320,7 @@
       .phrase { padding: 18px; }
       .quote { font-size: 18px; }
       .game-top { align-items: flex-start; }
+      .character-list { columns: 1; }
     }
   </style>
 </head>
@@ -269,25 +340,20 @@
         <h2>Como jogar</h2>
 
         <ol class="rules">
-          <li>Uma pessoa fica com o celular e será o <strong>leitor</strong> da rodada.</li>
-          <li>O jogo apresenta um personagem bíblico e <strong>5 frases</strong> desse personagem.</li>
-          <li>O leitor escolhe <strong>uma das cinco frases</strong> e fala a frase para a pessoa seguinte, sem revelar quem disse.</li>
-          <li>Se a pessoa errar, o leitor escolhe outra frase e fala para a <strong>próxima pessoa</strong>.</li>
-          <li>As cinco frases podem ser usadas <strong>na ordem que o leitor preferir</strong>.</li>
-          <li>Quando alguém acertar o personagem, essa pessoa <strong>marca 1 ponto</strong>.</li>
-          <li>Depois do acerto, o dispositivo passa para o <strong>próximo personagem aleatório</strong>, sem repetir personagens anteriores.</li>
-          <li>A nova pessoa fica com o dispositivo e passa a ser o leitor da próxima rodada.</li>
-          <li>A partida termina quando todos os personagens disponíveis tiverem sido usados.</li>
+          <li>Uma pessoa fica com o celular e é o <strong>leitor</strong> da rodada.</li>
+          <li>O leitor vê o personagem e lê uma frase por vez, sem revelar quem é.</li>
+          <li>Se alguém errar, o leitor lê outra frase para o próximo jogador.</li>
+          <li>Quem acertar marca <strong>1 ponto</strong>. Depois, começa uma nova rodada com outro personagem.</li>
         </ol>
       </div>
 
       <div class="card start-card">
         <p>
-          <strong>Importante:</strong> o leitor deve manter o celular voltado para si
-          para que os outros jogadores não vejam o personagem antes de responder.
+          <strong>Dica:</strong> mantenha o celular voltado para o leitor para que os outros jogadores não vejam o personagem.
         </p>
 
         <button id="startButton">Iniciar jogo</button>
+        <button id="characterListButton" class="character-list-button">Ver personagens cadastrados</button>
       </div>
 
     </section>
@@ -306,8 +372,7 @@
       </div>
 
       <div class="instruction">
-        Escolha qualquer uma das 5 frases. Depois de uma resposta errada,
-        escolha outra frase para o próximo jogador.
+        Toque em uma frase depois de lê-la para marcá-la como usada.
       </div>
 
       <div id="phrases" class="phrases"></div>
@@ -335,6 +400,17 @@
 
     </section>
 
+    <!-- LISTA DE PERSONAGENS -->
+    <div id="characterModal" class="modal" role="dialog" aria-modal="true" aria-labelledby="characterListTitle">
+      <div class="modal-card">
+        <div class="modal-header">
+          <h2 id="characterListTitle">Personagens cadastrados</h2>
+          <button id="closeCharacterList" class="close-button" aria-label="Fechar">×</button>
+        </div>
+        <ol id="characterList" class="character-list"></ol>
+      </div>
+    </div>
+
     <div id="errorBox" class="error" hidden></div>
 
   </main>
@@ -358,6 +434,8 @@
     const gameScreen = document.getElementById("gameScreen");
     const endScreen = document.getElementById("endScreen");
     const errorBox = document.getElementById("errorBox");
+    const characterModal = document.getElementById("characterModal");
+    const characterList = document.getElementById("characterList");
 
     const characterName = document.getElementById("characterName");
     const phrases = document.getElementById("phrases");
@@ -417,19 +495,12 @@
     }
 
     function sortearProximoPersonagem() {
-      /*
-        Só existe uma chamada para esta função depois que:
-        - a partida começou; ou
-        - alguém acertou o personagem atual.
-      */
-
       if (disponiveis.length === 0) {
         mostrarTela(endScreen);
         return;
       }
 
       const indice = Math.floor(Math.random() * disponiveis.length);
-
       const personagem = disponiveis.splice(indice, 1)[0];
 
       renderizarPersonagem(personagem);
@@ -437,7 +508,6 @@
 
     function renderizarPersonagem(personagem) {
       characterName.textContent = personagem.nome;
-
       phrases.innerHTML = "";
 
       if (!Array.isArray(personagem.falas)) {
@@ -447,6 +517,10 @@
       personagem.falas.forEach(function(fala, index) {
         const card = document.createElement("article");
         card.className = "phrase";
+        card.setAttribute("role", "button");
+        card.setAttribute("tabindex", "0");
+        card.setAttribute("aria-pressed", "false");
+        card.setAttribute("aria-label", "Marcar frase " + (index + 1) + " como lida");
 
         const number = document.createElement("div");
         number.className = "phrase-number";
@@ -464,14 +538,55 @@
         card.appendChild(quote);
         card.appendChild(reference);
 
+        function alternarSelecionada() {
+          const selecionada = card.classList.toggle("selected");
+          card.setAttribute("aria-pressed", String(selecionada));
+          card.setAttribute(
+            "aria-label",
+            selecionada
+              ? "Frase " + (index + 1) + " marcada como lida"
+              : "Marcar frase " + (index + 1) + " como lida"
+          );
+        }
+
+        card.addEventListener("click", alternarSelecionada);
+        card.addEventListener("keydown", function(event) {
+          if (event.key === "Enter" || event.key === " ") {
+            event.preventDefault();
+            alternarSelecionada();
+          }
+        });
+
         phrases.appendChild(card);
       });
 
       const total = personagens.length;
       const usados = total - disponiveis.length;
 
-      counter.textContent =
-        "Personagem " + usados + " de " + total;
+      counter.textContent = "Personagem " + usados + " de " + total;
+    }
+
+    function abrirListaPersonagens() {
+      characterList.innerHTML = "";
+
+      const nomes = personagens
+        .map(function(personagem) { return personagem.nome; })
+        .sort(function(a, b) {
+          return a.localeCompare(b, "pt-BR", { sensitivity: "base" });
+        });
+
+      nomes.forEach(function(nome) {
+        const item = document.createElement("li");
+        item.textContent = nome;
+        characterList.appendChild(item);
+      });
+
+      characterModal.classList.add("open");
+      document.getElementById("closeCharacterList").focus();
+    }
+
+    function fecharListaPersonagens() {
+      characterModal.classList.remove("open");
     }
 
     document
@@ -489,6 +604,26 @@
     document
       .getElementById("restartButton")
       .addEventListener("click", iniciarJogo);
+
+    document
+      .getElementById("characterListButton")
+      .addEventListener("click", abrirListaPersonagens);
+
+    document
+      .getElementById("closeCharacterList")
+      .addEventListener("click", fecharListaPersonagens);
+
+    characterModal.addEventListener("click", function(event) {
+      if (event.target === characterModal) {
+        fecharListaPersonagens();
+      }
+    });
+
+    document.addEventListener("keydown", function(event) {
+      if (event.key === "Escape" && characterModal.classList.contains("open")) {
+        fecharListaPersonagens();
+      }
+    });
 
     carregarBanco();
   </script>
