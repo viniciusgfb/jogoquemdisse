@@ -3,7 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Quem disse? — jogo de frases de personagens bíblicos.">
   <title>Quem disse?</title>
+
   <style>
     * { box-sizing: border-box; }
 
@@ -15,78 +17,97 @@
       --accent: #8b5e34;
       --accent-dark: #674326;
       --border: #ded5c6;
+      --success: #477047;
+      --success-bg: #edf5ed;
     }
 
     body {
       margin: 0;
       min-height: 100vh;
-      font-family: Georgia, "Times New Roman", serif;
       background:
         radial-gradient(circle at top, rgba(139,94,52,.08), transparent 35%),
         var(--bg);
       color: var(--text);
+      font-family: Georgia, "Times New Roman", serif;
     }
 
     .app {
-      width: min(900px, calc(100% - 32px));
+      width: min(920px, calc(100% - 28px));
       margin: 0 auto;
-      padding: 48px 0;
+      padding: 34px 0 50px;
     }
 
     header {
       text-align: center;
-      margin-bottom: 36px;
+      margin-bottom: 28px;
     }
 
     h1 {
       margin: 0;
-      font-size: clamp(42px, 8vw, 72px);
+      font-size: clamp(44px, 9vw, 72px);
       letter-spacing: -2px;
     }
 
     .subtitle {
-      margin: 10px 0 0;
+      margin: 8px 0 0;
       color: var(--muted);
       font-family: Arial, sans-serif;
-      font-size: 15px;
+      font-size: 14px;
     }
 
-    .screen {
-      display: none;
-    }
+    .screen { display: none; }
+    .screen.active { display: block; }
 
-    .screen.active {
-      display: block;
-    }
-
-    .start-card {
+    .card {
       background: var(--card);
       border: 1px solid var(--border);
       border-radius: 22px;
-      padding: 48px 28px;
-      text-align: center;
       box-shadow: 0 12px 35px rgba(60,45,25,.08);
     }
 
-    .start-card p {
-      max-width: 560px;
-      margin: 0 auto 28px;
+    .rules-card {
+      padding: 30px;
+      margin-bottom: 18px;
+    }
+
+    .rules-card h2 {
+      margin: 0 0 18px;
+      font-size: 28px;
+      text-align: center;
+    }
+
+    .rules {
+      margin: 0;
+      padding-left: 23px;
       line-height: 1.7;
+      font-size: 17px;
+    }
+
+    .rules li { margin-bottom: 9px; }
+
+    .start-card {
+      padding: 32px 24px;
+      text-align: center;
+    }
+
+    .start-card p {
+      max-width: 650px;
+      margin: 0 auto 25px;
       color: var(--muted);
-      font-size: 18px;
+      line-height: 1.65;
     }
 
     button {
       border: 0;
       border-radius: 12px;
-      padding: 15px 24px;
+      padding: 14px 22px;
       background: var(--accent);
       color: white;
-      font-weight: 700;
+      font-family: Arial, sans-serif;
       font-size: 16px;
+      font-weight: 700;
       cursor: pointer;
       transition: transform .15s, background .15s;
-      font-family: Arial, sans-serif;
     }
 
     button:hover {
@@ -104,8 +125,8 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
-      gap: 16px;
-      margin-bottom: 18px;
+      gap: 12px;
+      margin-bottom: 16px;
       font-family: Arial, sans-serif;
     }
 
@@ -114,13 +135,10 @@
       font-size: 14px;
     }
 
-    .character {
+    .character-card {
+      padding: 28px 22px;
       text-align: center;
-      background: var(--card);
-      border: 1px solid var(--border);
-      border-radius: 22px;
-      padding: 30px 24px;
-      margin-bottom: 18px;
+      margin-bottom: 16px;
     }
 
     .character-label {
@@ -133,25 +151,47 @@
     }
 
     .character-name {
-      font-size: clamp(30px, 6vw, 48px);
       margin: 0;
+      font-size: clamp(34px, 7vw, 52px);
+    }
+
+    .instruction {
+      padding: 15px 18px;
+      margin-bottom: 16px;
+      border-radius: 14px;
+      background: var(--success-bg);
+      border: 1px solid #cbdcc9;
+      color: var(--success);
+      font-family: Arial, sans-serif;
+      line-height: 1.5;
+      text-align: center;
     }
 
     .phrases {
       display: grid;
-      gap: 14px;
+      gap: 12px;
     }
 
     .phrase {
       background: var(--card);
       border: 1px solid var(--border);
       border-radius: 16px;
-      padding: 24px;
+      padding: 21px;
+    }
+
+    .phrase-number {
+      color: var(--muted);
+      font-family: Arial, sans-serif;
+      font-size: 12px;
+      font-weight: 700;
+      margin-bottom: 9px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
     }
 
     .quote {
-      margin: 0 0 14px;
-      font-size: 20px;
+      margin: 0 0 13px;
+      font-size: 19px;
       line-height: 1.6;
     }
 
@@ -165,93 +205,154 @@
     .actions {
       display: flex;
       justify-content: center;
-      gap: 12px;
-      margin-top: 24px;
       flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 20px;
+    }
+
+    .actions .next-button {
+      padding: 17px 28px;
+      font-size: 17px;
     }
 
     .end-card {
+      padding: 42px 25px;
       text-align: center;
-      background: var(--card);
-      border: 1px solid var(--border);
-      border-radius: 22px;
-      padding: 45px 25px;
     }
 
     .end-card h2 {
-      font-size: 34px;
       margin-top: 0;
+      font-size: 35px;
+    }
+
+    .end-card p {
+      color: var(--muted);
+      line-height: 1.6;
+      margin-bottom: 25px;
     }
 
     .error {
+      margin-top: 18px;
+      padding: 17px;
+      border-radius: 12px;
       background: #fff0f0;
       border: 1px solid #e0b8b8;
       color: #7a2525;
-      padding: 18px;
-      border-radius: 12px;
       font-family: Arial, sans-serif;
+      line-height: 1.5;
     }
 
     @media (max-width: 600px) {
-      .app { padding: 28px 0; }
-      .start-card, .character { padding: 30px 20px; }
-      .phrase { padding: 19px; }
+      .app { padding-top: 24px; }
+      .rules-card { padding: 23px 20px; }
+      .rules { font-size: 16px; }
+      .character-card { padding: 25px 18px; }
+      .phrase { padding: 18px; }
       .quote { font-size: 18px; }
       .game-top { align-items: flex-start; }
     }
   </style>
 </head>
+
 <body>
   <main class="app">
+
     <header>
       <h1>Quem disse?</h1>
-      <p class="subtitle">Frases de personagens bíblicos</p>
+      <p class="subtitle">Um jogo de frases de personagens bíblicos</p>
     </header>
 
+    <!-- TELA INICIAL -->
     <section id="startScreen" class="screen active">
-      <div class="start-card">
+
+      <div class="card rules-card">
+        <h2>Como jogar</h2>
+
+        <ol class="rules">
+          <li>Uma pessoa fica com o celular e será o <strong>leitor</strong> da rodada.</li>
+          <li>O jogo apresenta um personagem bíblico e <strong>5 frases</strong> desse personagem.</li>
+          <li>O leitor escolhe <strong>uma das cinco frases</strong> e fala a frase para a pessoa seguinte, sem revelar quem disse.</li>
+          <li>Se a pessoa errar, o leitor escolhe outra frase e fala para a <strong>próxima pessoa</strong>.</li>
+          <li>As cinco frases podem ser usadas <strong>na ordem que o leitor preferir</strong>.</li>
+          <li>Quando alguém acertar o personagem, essa pessoa <strong>marca 1 ponto</strong>.</li>
+          <li>Depois do acerto, o dispositivo passa para o <strong>próximo personagem aleatório</strong>, sem repetir personagens anteriores.</li>
+          <li>A nova pessoa fica com o dispositivo e passa a ser o leitor da próxima rodada.</li>
+          <li>A partida termina quando todos os personagens disponíveis tiverem sido usados.</li>
+        </ol>
+      </div>
+
+      <div class="card start-card">
         <p>
-          Descubra as falas dos personagens bíblicos.
-          A cada rodada, um personagem é selecionado aleatoriamente
-          e suas cinco falas são apresentadas.
+          <strong>Importante:</strong> o leitor deve manter o celular voltado para si
+          para que os outros jogadores não vejam o personagem antes de responder.
         </p>
+
         <button id="startButton">Iniciar jogo</button>
       </div>
+
     </section>
 
+    <!-- TELA DO JOGO -->
     <section id="gameScreen" class="screen">
+
       <div class="game-top">
         <span id="counter" class="counter"></span>
         <button id="restartButton" class="secondary">Recomeçar</button>
       </div>
 
-      <div class="character">
-        <div class="character-label">Quem disse?</div>
+      <div class="card character-card">
+        <div class="character-label">Personagem da rodada</div>
         <h2 id="characterName" class="character-name"></h2>
+      </div>
+
+      <div class="instruction">
+        Escolha qualquer uma das 5 frases. Depois de uma resposta errada,
+        escolha outra frase para o próximo jogador.
       </div>
 
       <div id="phrases" class="phrases"></div>
 
       <div class="actions">
-        <button id="nextButton">Próximo personagem</button>
+        <button id="nextButton" class="next-button">
+          Alguém acertou — próximo personagem
+        </button>
       </div>
+
     </section>
 
+    <!-- FIM DA PARTIDA -->
     <section id="endScreen" class="screen">
-      <div class="end-card">
-        <h2>Fim da partida</h2>
-        <p>Todos os personagens do banco já foram apresentados.</p>
+
+      <div class="card end-card">
+        <h2>Fim da partida!</h2>
+        <p>
+          Todos os personagens disponíveis já foram utilizados.
+          Para começar uma nova partida, os personagens poderão ser sorteados novamente.
+        </p>
+
         <button id="playAgainButton">Jogar novamente</button>
       </div>
+
     </section>
 
     <div id="errorBox" class="error" hidden></div>
+
   </main>
 
   <script>
+    /*
+      QUEM DISSE?
+      Jogo estático preparado para GitHub Pages.
+
+      Estrutura esperada:
+        index.html
+        banco.json
+
+      O banco é carregado com fetch("banco.json").
+    */
+
     let personagens = [];
     let disponiveis = [];
-    let personagemAtual = null;
 
     const startScreen = document.getElementById("startScreen");
     const gameScreen = document.getElementById("gameScreen");
@@ -263,86 +364,131 @@
     const counter = document.getElementById("counter");
 
     function mostrarTela(tela) {
-      [startScreen, gameScreen, endScreen].forEach(el => {
+      [startScreen, gameScreen, endScreen].forEach(function(el) {
         el.classList.remove("active");
       });
+
       tela.classList.add("active");
+      window.scrollTo({ top: 0, behavior: "smooth" });
     }
 
     async function carregarBanco() {
       try {
-        const resposta = await fetch("banco.json", { cache: "no-store" });
+        const resposta = await fetch("banco.json", {
+          cache: "no-store"
+        });
 
         if (!resposta.ok) {
-          throw new Error("Não foi possível carregar o banco.json.");
+          throw new Error("Falha ao carregar banco.json");
         }
 
         const dados = await resposta.json();
 
         if (!dados.personagens || !Array.isArray(dados.personagens)) {
-          throw new Error("O banco.json não contém uma lista válida de personagens.");
+          throw new Error("Formato inválido do banco.json");
         }
 
         personagens = dados.personagens;
-        disponiveis = [...personagens];
+
+        if (personagens.length === 0) {
+          throw new Error("O banco não possui personagens.");
+        }
+
       } catch (erro) {
-        errorBox.hidden = false;
-        errorBox.textContent =
-          "Não foi possível carregar o banco de dados. " +
-          "Abra o jogo por um servidor local (por exemplo, Live Server) " +
-          "em vez de abrir o index.html diretamente.";
         console.error(erro);
+
+        errorBox.hidden = false;
+        errorBox.innerHTML =
+          "<strong>Não foi possível carregar o banco de personagens.</strong><br>" +
+          "Verifique se o arquivo <strong>banco.json</strong> está na mesma pasta " +
+          "do index.html. No GitHub Pages isso funcionará automaticamente.";
       }
     }
 
-    function sortearPersonagem() {
+    function iniciarJogo() {
+      disponiveis = [...personagens];
+
+      if (disponiveis.length === 0) {
+        return;
+      }
+
+      mostrarTela(gameScreen);
+      sortearProximoPersonagem();
+    }
+
+    function sortearProximoPersonagem() {
+      /*
+        Só existe uma chamada para esta função depois que:
+        - a partida começou; ou
+        - alguém acertou o personagem atual.
+      */
+
       if (disponiveis.length === 0) {
         mostrarTela(endScreen);
         return;
       }
 
       const indice = Math.floor(Math.random() * disponiveis.length);
-      personagemAtual = disponiveis.splice(indice, 1)[0];
 
-      renderizarPersonagem();
+      const personagem = disponiveis.splice(indice, 1)[0];
+
+      renderizarPersonagem(personagem);
     }
 
-    function renderizarPersonagem() {
-      characterName.textContent = personagemAtual.nome;
+    function renderizarPersonagem(personagem) {
+      characterName.textContent = personagem.nome;
+
       phrases.innerHTML = "";
 
-      personagemAtual.falas.forEach(fala => {
+      if (!Array.isArray(personagem.falas)) {
+        return;
+      }
+
+      personagem.falas.forEach(function(fala, index) {
         const card = document.createElement("article");
         card.className = "phrase";
 
+        const number = document.createElement("div");
+        number.className = "phrase-number";
+        number.textContent = "Frase " + (index + 1);
+
         const quote = document.createElement("p");
         quote.className = "quote";
-        quote.textContent = `“${fala.texto}”`;
+        quote.textContent = "“" + fala.texto + "”";
 
         const reference = document.createElement("div");
         reference.className = "reference";
         reference.textContent = fala.referencia;
 
+        card.appendChild(number);
         card.appendChild(quote);
         card.appendChild(reference);
+
         phrases.appendChild(card);
       });
 
       const total = personagens.length;
-      const exibidos = total - disponiveis.length;
-      counter.textContent = `${exibidos} de ${total}`;
+      const usados = total - disponiveis.length;
+
+      counter.textContent =
+        "Personagem " + usados + " de " + total;
     }
 
-    function iniciarJogo() {
-      disponiveis = [...personagens];
-      mostrarTela(gameScreen);
-      sortearPersonagem();
-    }
+    document
+      .getElementById("startButton")
+      .addEventListener("click", iniciarJogo);
 
-    document.getElementById("startButton").addEventListener("click", iniciarJogo);
-    document.getElementById("playAgainButton").addEventListener("click", iniciarJogo);
-    document.getElementById("nextButton").addEventListener("click", sortearPersonagem);
-    document.getElementById("restartButton").addEventListener("click", iniciarJogo);
+    document
+      .getElementById("playAgainButton")
+      .addEventListener("click", iniciarJogo);
+
+    document
+      .getElementById("nextButton")
+      .addEventListener("click", sortearProximoPersonagem);
+
+    document
+      .getElementById("restartButton")
+      .addEventListener("click", iniciarJogo);
 
     carregarBanco();
   </script>

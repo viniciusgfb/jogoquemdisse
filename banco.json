@@ -24,6 +24,117 @@
           "referencia": "Daniel 9:4"
         }
       ]
+    },
+    {
+      "nome": "Jesus",
+      "falas": [
+        {
+          "texto": "Eu sou o caminho, a verdade e a vida. Ninguém vem ao Pai senão por mim.",
+          "referencia": "João 14:6"
+        },
+        {
+          "texto": "Venham a mim, todos vocês que estão trabalhando duro e estão sobrecarregados, e eu os reanimarei.",
+          "referencia": "Mateus 11:28"
+        },
+        {
+          "texto": "Continuem a amar os seus inimigos e a orar pelos que os perseguem; para que mostrem ser filhos de seu Pai, que está nos céus, visto que ele faz o seu sol nascer sobre maus e bons e faz chover sobre justos e injustos.",
+          "referencia": "Mateus 5:44-45"
+        },
+        {
+          "texto": "Portanto, paguem a César o que é de César, mas a Deus o que é de Deus.",
+          "referencia": "Mateus 22:21"
+        },
+        {
+          "texto": "Eu sou a ressurreição e a vida. Quem exercer fé em mim, ainda que morra, voltará a viver; e todo aquele que vive e exerce fé em mim não morrerá jamais. Você acredita nisso?",
+          "referencia": "João 11:25-26"
+        },
+        {
+          "texto": "Mas eu lhes digo que algo maior do que o templo está aqui.",
+          "referencia": "Mateus 12:6"
+        },
+        {
+          "texto": "Quanto mais vale um homem do que uma ovelha! Por isso, é permitido fazer algo bom no sábado.",
+          "referencia": "Mateus 12:12"
+        },
+        {
+          "texto": "Portanto, não tenham medo; vocês valem mais do que muitos pardais.",
+          "referencia": "Mateus 10:31"
+        },
+        {
+          "texto": "Quem achar a sua vida a perderá, e quem perder a sua vida por minha causa a achará.",
+          "referencia": "Mateus 10:39"
+        },
+        {
+          "texto": "Cuidado para que ninguém os engane.",
+          "referencia": "Mateus 24:4"
+        },
+        {
+          "texto": "Não estão vendo todas estas coisas? Eu lhes digo a verdade: De modo algum ficará aqui pedra sobre pedra sem ser derrubada.",
+          "referencia": "Mateus 24:2"
+        },
+        {
+          "texto": "Eu lhes digo a verdade: Se tiverem fé e não duvidarem, vocês não só farão o que eu fiz à figueira, mas até mesmo se disserem a este monte: ‘Levante-se e jogue-se no mar’, isso acontecerá.",
+          "referencia": "Mateus 21:21"
+        },
+        {
+          "texto": "Não pensem que vim destruir a Lei ou os Profetas. Não vim destruir, mas cumprir.",
+          "referencia": "Mateus 5:17"
+        },
+        {
+          "texto": "Por que vocês estão perturbando a mulher? Ela me fez uma coisa muito boa.",
+          "referencia": "Mateus 26:10"
+        }
+      ]
+    },
+    {
+      "nome": "Josué",
+      "falas": [
+        {
+          "texto": "Agora, sejam muito corajosos para obedecer e cumprir tudo o que está escrito no livro da Lei de Moisés, nunca se desviando dele nem para a direita nem para a esquerda.",
+          "referencia": "Josué 23:6"
+        },
+        {
+          "texto": "Por isso, sempre tomem cuidado, não deixando de amar a Jeová, seu Deus.",
+          "referencia": "Josué 23:11"
+        },
+        {
+          "texto": "Vejam, estou para morrer, e vocês bem sabem, de todo o seu coração e de toda a sua alma, que não falhou nem sequer uma palavra de todas as boas promessas que Jeová, seu Deus, lhes fez.",
+          "referencia": "Josué 23:14"
+        },
+        {
+          "texto": "E agora, temam a Jeová e sirvam-no sem defeito e em verdade, e removam os deuses a que seus antepassados serviram do outro lado do Rio e no Egito, e sirvam a Jeová.",
+          "referencia": "Josué 24:14"
+        },
+        {
+          "texto": "Agora, se vocês não acham bom servir a Jeová, escolham hoje a quem servirão, se aos deuses a quem serviram os seus antepassados que estavam do outro lado do rio Eufrates, ou aos deuses dos amorreus em cuja terra vocês estão morando. Mas, quanto a mim e aos da minha casa, serviremos a Jeová.",
+          "referencia": "Josué 24:15"
+        }
+      ]
+    },
+    {
+      "nome": "Maria",
+      "falas": [
+        {
+          "texto": "Como isso será possível, visto que não tenho relações com um homem?",
+          "referencia": "Lucas 1:34"
+        },
+        {
+          "texto": "Aqui está a escrava de Jeová! Que aconteça comigo segundo a sua declaração.",
+          "referencia": "Lucas 1:38"
+        },
+        {
+          "texto": "Minha alma magnifica a Jeová",
+          "referencia": "Lucas 1:46"
+        },
+        {
+          "texto": "E meu espírito não pode deixar de estar cheio de alegria por Deus, meu Salvador",
+          "referencia": "Lucas 1:47"
+        },
+        {
+          "texto": "Façam o que ele lhes disser.",
+          "referencia": "João 2:5"
+        }
+      ]
     }
   ]
 }
