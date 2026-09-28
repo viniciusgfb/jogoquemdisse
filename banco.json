@@ -112,7 +112,7 @@
       ]
     },
     {
-      "nome": "Maria",
+      "nome": "Maria, mãe de Jesus",
       "falas": [
         {
           "texto": "Como isso será possível, visto que não tenho relações com um homem?",
@@ -158,6 +158,996 @@
     {
       "texto": "Uma estrela sairá de Jacó, e um cetro se levantará de Israel.",
       "referencia": "Números 24:17"
+    }
+  ]
+},
+{
+  "nome": "Marta",
+  "falas": [
+    {
+      "texto": "Senhor, não se importa que minha irmã me deixou sozinha para cuidar das coisas? Diga a ela que venha me ajudar.",
+      "referencia": "Lucas 10:40"
+    },
+    {
+      "texto": "Senhor, se estivesse aqui, meu irmão não teria morrido.",
+      "referencia": "João 11:21"
+    },
+    {
+      "texto": "Contudo, mesmo agora, eu sei que tudo o que o senhor pedir a Deus, Deus lhe dará.",
+      "referencia": "João 11:22"
+    },
+    {
+      "texto": "Sei que ele se levantará na ressurreição, no último dia.",
+      "referencia": "João 11:24"
+    },
+    {
+      "texto": "Sim, Senhor, eu acredito que o senhor é o Cristo, o Filho de Deus, aquele que tinha de vir ao mundo.",
+      "referencia": "João 11:27"
+    }
+  ]
+},
+{
+  "nome": "Maria, irmã de Lázaro",
+  "falas": [
+    {
+      "texto": "Senhor, aquele que o senhor ama está doente.",
+      "referencia": "João 11:3"
+    },
+    {
+      "texto": "Senhor, se estivesse aqui, meu irmão não teria morrido.",
+      "referencia": "João 11:32"
+    }
+  ]
+},
+{
+  "nome": "Rei Ciro",
+  "falas": [
+    {
+      "texto": "Jeová, o Deus dos céus, deu-me todos os reinos da terra e ele me designou para lhe construir uma casa em Jerusalém, que fica em Judá.",
+      "referencia": "Esdras 1:2"
+    },
+    {
+      "texto": "Quem entre vocês pertence ao seu povo? Que o seu Deus esteja com ele. Portanto, que ele suba a Jerusalém, em Judá, e reconstrua a casa que ficava em Jerusalém, a casa de Jeová, o Deus de Israel, o verdadeiro Deus. Ele é o Deus que estava em Jerusalém.",
+      "referencia": "Esdras 1:3"
+    },
+    {
+      "texto": "E todo aquele que restar, onde quer que esteja morando, que os homens do seu lugar lhe deem ajuda com prata, ouro, bens e animais domésticos, junto com a oferta voluntária para a casa do verdadeiro Deus, que estava em Jerusalém.",
+      "referencia": "Esdras 1:4"
+    }
+  ]
+},
+{
+  "nome": "Rei Artaxerxes",
+  "falas": [
+    {
+      "texto": "Emiti uma ordem autorizando todos no meu reino que forem do povo de Israel, incluindo seus sacerdotes e levitas, a ir com você a Jerusalém, se assim desejarem.",
+      "referencia": "Esdras 7:13"
+    },
+    {
+      "texto": "E, com o restante da prata e do ouro, você e seus irmãos podem fazer o que acharem melhor, de acordo com a vontade do seu Deus.",
+      "referencia": "Esdras 7:18"
+    },
+    {
+      "texto": "Que tudo o que o Deus dos céus ordenar a respeito da casa do Deus dos céus seja feito com zelo, para que não haja ira contra os domínios do rei e contra os seus filhos.",
+      "referencia": "Esdras 7:23"
+    },
+    {
+      "texto": "Saibam também que não é permitido cobrar imposto, tributo nem pedágio de nenhum dos sacerdotes, dos levitas, dos músicos, dos porteiros, dos servos do templo ou dos trabalhadores daquela casa de Deus.",
+      "referencia": "Esdras 7:24"
+    },
+    {
+      "texto": "E todo aquele que não obedecer à Lei do seu Deus e à lei do rei deve ser prontamente julgado e punido com a morte, com o banimento, com multa ou com prisão.",
+      "referencia": "Esdras 7:26"
+    }
+  ]
+},
+{
+  "nome": "Rei Dario",
+  "falas": [
+    {
+      "texto": "“Agora, Tatenai, governador da região ao oeste do rio Eufrates, Setar-Bozenai e seus colegas, os governadores menores da região ao oeste do rio Eufrates: Mantenham-se afastados de lá.",
+      "referencia": "Esdras 6:6"
+    },
+    {
+      "texto": "Deixem que a obra dessa casa de Deus continue. O governador dos judeus e os anciãos dos judeus reconstruirão essa casa de Deus no seu lugar.",
+      "referencia": "Esdras 6:7"
+    },
+    {
+      "texto": "Além disso, emito uma ordem a respeito do que devem fazer para que os anciãos dos judeus possam reconstruir essa casa de Deus: As despesas serão prontamente pagas a esses homens pelo tesouro real, isto é, com os impostos recolhidos na região a oeste do rio Eufrates, de modo a que não se interrompa a obra.",
+      "referencia": "Esdras 6:8"
+    },
+    {
+      "texto": "Ser-lhes-á dado regularmente tudo o que for preciso, todos os dias, sem falta — novilhos, carneiros e cordeiros para as ofertas queimadas ao Deus do céu, bem como trigo, sal, vinho e azeite, conforme disserem os sacerdotes que estão em Jerusalém —",
+      "referencia": "Esdras 6:9"
+    },
+    {
+      "texto": "a fim de que apresentem regularmente ofertas que agradem ao Deus dos céus e orem pela vida do rei e dos seus filhos.",
+      "referencia": "Esdras 6:10"
+    }
+  ]
+},
+{
+  "nome": "Naamã",
+  "falas": [
+    {
+      "texto": "Eu disse a mim mesmo: ‘Ele virá para fora, ficará em pé na minha frente e invocará o nome de Jeová, seu Deus, movendo a mão para lá e para cá sobre a lepra para curá-la.’ Não são o Abana e o Farpar, os rios de Damasco, melhores do que todas as águas de Israel? Não posso me lavar neles e ficar puro?",
+      "referencia": "2 Reis 5:11-12"
+    },
+    {
+      "texto": "Agora eu sei que não há Deus em nenhuma parte da terra a não ser em Israel. Agora, por favor, aceite um presente do seu servo.",
+      "referencia": "2 Reis 5:15"
+    },
+    {
+      "texto": "Já que o senhor não aceita, por favor, dê ao seu servo um pouco do solo deste país, a carga de um par de mulas, pois o seu servo não fará mais oferta queimada nem sacrifício a outros deuses, a não ser a Jeová. Mas que Jeová perdoe o seu servo apenas pelo seguinte: toda vez que o meu senhor, o rei, entra na casa de Rimom para se curvar ali, ele se apoia no meu braço, e eu tenho de curvar-me na casa de Rimom. Quando eu me curvar na casa de Rimom, por favor, que Jeová perdoe o seu servo.",
+      "referencia": "2 Reis 5:17-18"
+    },
+    {
+      "texto": "Está tudo bem?",
+      "referencia": "2 Reis 5:21"
+    },
+    {
+      "texto": "Pegue dois talentos.",
+      "referencia": "2 Reis 5:23"
+    }
+  ]
+},
+{
+  "nome": "Menina israelita",
+  "falas": [
+    {
+      "texto": "Seria tão bom se o meu senhor visitasse o profeta que está em Samaria! Ele o curaria da sua lepra.",
+      "referencia": "2 Reis 5:3"
+    }
+  ]
+},
+{
+  "nome": "Pedro",
+  "falas": [
+    {
+      "texto": "O senhor é o Cristo, o Filho do Deus vivente.",
+      "referencia": "Mateus 16:16"
+    },
+    {
+      "texto": "Tenha compaixão de si mesmo, Senhor! Isso de modo algum lhe acontecerá.",
+      "referencia": "Mateus 16:22"
+    },
+    {
+      "texto": "Ainda que todos os outros tropecem no que diz respeito ao senhor, eu nunca tropeçarei!",
+      "referencia": "Mateus 26:33"
+    },
+    {
+      "texto": "Mesmo que eu tenha de morrer com o senhor, de modo algum o negarei!",
+      "referencia": "Mateus 26:35"
+    },
+    {
+      "texto": "Senhor, o senhor sabe todas as coisas. O senhor sabe que eu o amo.",
+      "referencia": "João 21:17"
+    },
+    {
+      "texto": "Senhor, para quem iremos? O senhor tem declarações de vida eterna.",
+      "referencia": "João 6:68"
+    },
+    {
+      "texto": "Senhor, se é o senhor, mande-me ir ao seu encontro por cima das águas.",
+      "referencia": "Mateus 14:28"
+    },
+    {
+      "texto": "Senhor, quantas vezes meu irmão poderá pecar contra mim e eu devo perdoá-lo? Até sete vezes?",
+      "referencia": "Mateus 18:21"
+    },
+    {
+      "texto": "Veja! Nós deixamos tudo e seguimos o senhor; o que haverá para nós?",
+      "referencia": "Mateus 19:27"
+    },
+    {
+      "texto": "Senhor, não só os meus pés, mas também as minhas mãos e a minha cabeça.",
+      "referencia": "João 13:9"
+    }
+  ]
+},
+{
+  "nome": "André",
+  "falas": [
+    {
+      "texto": "Achamos o Messias!",
+      "referencia": "João 1:41"
+    },
+    {
+      "texto": "Há aqui um menino que tem cinco pães de cevada e dois peixinhos. Mas o que é isso para tanta gente?",
+      "referencia": "João 6:9"
+    }
+  ]
+},
+{
+  "nome": "Herodes, o Grande",
+  "falas": [
+    {
+      "texto": "Vão, procurem cuidadosamente a criancinha e, quando a encontrarem, avisem-me, para que eu também possa ir e lhe prestar homenagem.",
+      "referencia": "Mateus 2:8"
+    }
+  ]
+},
+{
+  "nome": "Herodes Agripa II",
+  "falas": [
+    {
+      "texto": "Eu mesmo gostaria de ouvir o homem.",
+      "referencia": "Atos 25:22"
+    },
+    {
+      "texto": "Em pouco tempo você me persuadiria a me tornar cristão.",
+      "referencia": "Atos 26:28"
+    },
+    {
+      "texto": "Esse homem poderia ter sido solto se não tivesse apelado para César.",
+      "referencia": "Atos 26:32"
+    }
+  ]
+},
+{
+  "nome": "Caifás",
+  "falas": [
+    {
+      "texto": "Vocês não sabem nada, nem refletiram que é para o seu bem que um só homem morra a favor do povo, em vez de toda a nação ser destruída.",
+      "referencia": "João 11:49-50"
+    },
+    {
+      "texto": "Pelo Deus vivente, eu ponho você sob juramento para que nos diga se você é o Cristo, o Filho de Deus!",
+      "referencia": "Mateus 26:63"
+    },
+    {
+      "texto": "Ele blasfemou! Que necessidade temos ainda de testemunhas? Vejam! Agora vocês ouviram a blasfêmia. Qual é a opinião de vocês?",
+      "referencia": "Mateus 26:65"
+    }
+  ]
+},
+{
+  "nome": "Pôncio Pilatos",
+  "falas": [
+    {
+      "texto": "Você é o Rei dos judeus?",
+      "referencia": "Mateus 27:11"
+    },
+    {
+      "texto": "Qual deles vocês querem que eu solte: Barrabás ou Jesus, o chamado Cristo?",
+      "referencia": "Mateus 27:17"
+    },
+    {
+      "texto": "Qual dos dois vocês querem que eu solte?",
+      "referencia": "Mateus 27:21"
+    },
+    {
+      "texto": "O que, então, devo fazer com Jesus, o chamado Cristo?",
+      "referencia": "Mateus 27:22"
+    },
+    {
+      "texto": "Por quê? O que ele fez de mau?",
+      "referencia": "Mateus 27:23"
+    }
+  ]
+},
+{
+  "nome": "Jacó",
+  "falas": [
+    {
+      "texto": "Este é o acampamento de Deus!",
+      "referencia": "Gênesis 32:2"
+    },
+    {
+      "texto": "Jeová realmente está neste lugar, e eu não sabia disso. Como este lugar inspira temor! Só pode ser a casa de Deus, e este é o portão dos céus.",
+      "referencia": "Gênesis 28:16-17"
+    },
+    {
+      "texto": "Não o deixarei ir, a menos que me abençoe.",
+      "referencia": "Gênesis 32:26"
+    },
+    {
+      "texto": "Este monte de pedras é hoje testemunha entre mim e você.",
+      "referencia": "Gênesis 31:48"
+    },
+    {
+      "texto": "Vocês me trouxeram grandes dificuldades, fazendo-me odiado pelos habitantes desta terra, pelos cananeus e pelos perizeus. Somos poucos em número; eles certamente se juntarão para me atacar, e eu serei destruído, eu e a minha casa.",
+      "referencia": "Gênesis 34:30"
+    },
+    {
+      "texto": "Livrem-se dos deuses estrangeiros que há entre vocês, purifiquem-se e troquem as suas roupas, e vamos, subamos a Betel. Ali farei um altar ao verdadeiro Deus que me respondeu no dia da minha aflição e tem estado comigo em todo lugar por onde tenho andado.",
+      "referencia": "Gênesis 35:2-3"
+    },
+    {
+      "texto": "Os dias dos anos das minhas residências como forasteiro são cento e trinta anos. Os dias dos anos da minha vida mostraram-se poucos e aflitivos, e não alcançaram os dias dos anos das vidas de meus pais, nos dias das suas residências como forasteiros.",
+      "referencia": "Gênesis 47:9"
+    },
+    {
+      "texto": "O Deus Todo-Poderoso apareceu a mim em Luz, na terra de Canaã, e me abençoou.",
+      "referencia": "Gênesis 48:3"
+    },
+    {
+      "texto": "Por acaso estou no lugar de Deus, que a impediu de ter filhos?",
+      "referencia": "Gênesis 30:2"
+    },
+    {
+      "texto": "Eu nunca imaginei que veria o seu rosto, mas Deus me deixou ver também a sua descendência.",
+      "referencia": "Gênesis 48:11"
+    },
+    {
+      "texto": "Eu vi a Deus face a face, e ainda assim minha vida foi preservada.",
+      "referencia": "Gênesis 32:30"
+    },
+    {
+      "texto": "Esta pedra que ergui como coluna se tornará uma casa de Deus; e eu sem falta te darei um décimo de tudo que me deres.",
+      "referencia": "Gênesis 28:20-22"
+    },
+    {
+      "texto": "Veja, eu estou morrendo, mas Deus certamente continuará com vocês e os levará de volta à terra dos seus antepassados.",
+      "referencia": "Gênesis 48:21"
+    }
+  ]
+},
+{
+  "nome": "Abraão",
+  "falas": [
+    {
+      "texto": "Diga, por favor, que é minha irmã, para que eu seja bem tratado por sua causa, e a minha vida seja poupada.",
+      "referencia": "Gênesis 12:13"
+    },
+    {
+      "texto": "Não está toda esta terra disponível para você? Por favor, separe-se de mim.",
+      "referencia": "Gênesis 13:9"
+    },
+    {
+      "texto": "Soberano Senhor Jeová, o que me darás, visto que continuo sem filhos?",
+      "referencia": "Gênesis 15:2"
+    },
+    {
+      "texto": "Quem dera que Ismael tivesse o teu favor!",
+      "referencia": "Gênesis 17:18"
+    },
+    {
+      "texto": "Será que um homem de 100 anos de idade se tornará pai de um filho, e Sara, uma mulher de 90 anos de idade, terá um filho?",
+      "referencia": "Gênesis 17:17"
+    },
+    {
+      "texto": "Por favor, perdoa a minha ousadia em falar a Jeová embora eu seja pó e cinzas.",
+      "referencia": "Gênesis 18:27"
+    },
+    {
+      "texto": "Se por acaso houver ali apenas dez?",
+      "referencia": "Gênesis 18:32"
+    },
+    {
+      "texto": "Foi porque eu disse a mim mesmo: ‘Certamente, não há temor de Deus neste lugar, e eles me matarão por causa da minha esposa.’",
+      "referencia": "Gênesis 20:11"
+    },
+    {
+      "texto": "O senhor aceitará da minha mão as sete cordeiras como testemunho de que eu cavei este poço.",
+      "referencia": "Gênesis 21:30"
+    },
+    {
+      "texto": "Fiquem aqui com o jumento enquanto eu e o rapaz vamos até lá para adorar; depois retornaremos a vocês.",
+      "referencia": "Gênesis 22:5"
+    }
+  ]
+},
+{
+  "nome": "José",
+  "falas": [
+    {
+      "texto": "Meu senhor não sabe nem o que há comigo na casa, e tudo o que ele tem entregou aos meus cuidados.",
+      "referencia": "Gênesis 39:8"
+    },
+    {
+      "texto": "Não há ninguém maior do que eu nesta casa, e ele não me negou absolutamente nada, a não ser a senhora, porque é esposa dele.",
+      "referencia": "Gênesis 39:9"
+    },
+    {
+      "texto": "Por que vocês estão com o rosto triste hoje?",
+      "referencia": "Gênesis 40:7"
+    },
+    {
+      "texto": "Não pertencem a Deus as interpretações? Relatem os sonhos a mim, por favor.",
+      "referencia": "Gênesis 40:8"
+    },
+    {
+      "texto": "Quem sou eu? É Deus que falará sobre o bem-estar de Faraó.",
+      "referencia": "Gênesis 41:16"
+    },
+    {
+      "texto": "Por que vocês estão com medo? Vocês não sabiam que um homem como eu pode interpretar os presságios com exatidão?",
+      "referencia": "Gênesis 44:15"
+    },
+    {
+      "texto": "Não se irritem uns com os outros no caminho.",
+      "referencia": "Gênesis 45:24"
+    },
+    {
+      "texto": "Façam o seguinte e ficarão vivos, pois eu temo a Deus.",
+      "referencia": "Gênesis 42:18"
+    },
+    {
+      "texto": "Não tenham medo. Será que eu estou no lugar de Deus?",
+      "referencia": "Gênesis 50:19"
+    },
+    {
+      "texto": "Vocês, sem dúvida, queriam me fazer o mal. Mas Deus tinha a intenção de fazer o bem, para preservar a vida de muitas pessoas, como ele está fazendo hoje.",
+      "referencia": "Gênesis 50:20"
+    }
+  ]
+},
+{
+  "nome": "Isaque",
+  "falas": [
+    {
+      "texto": "Aqui estão o fogo e a lenha, mas onde está a ovelha para a oferta queimada?",
+      "referencia": "Gênesis 22:7"
+    },
+    {
+      "texto": "Ela é minha irmã.",
+      "referencia": "Gênesis 26:7"
+    },
+    {
+      "texto": "Por que vocês vieram a mim, já que vocês mesmos me odiaram e me mandaram embora da sua vizinhança?",
+      "referencia": "Gênesis 26:27"
+    },
+    {
+      "texto": "Aproxime-se, por favor, para que eu o apalpe, meu filho, para saber se você realmente é meu filho Esaú, ou não.",
+      "referencia": "Gênesis 27:21"
+    },
+    {
+      "texto": "A voz é a voz de Jacó, mas as mãos são as mãos de Esaú.",
+      "referencia": "Gênesis 27:22"
+    },
+    {
+      "texto": "Então quem foi à procura de caça e a trouxe para mim? Eu comi antes de você chegar, e eu o abençoei. Abençoado ele certamente ficará!",
+      "referencia": "Gênesis 27:33"
+    },
+    {
+      "texto": "Veja, a sua morada será longe dos solos férteis da terra e longe do orvalho dos céus acima. E você viverá pela sua espada e servirá seu irmão. Mas, quando você ficar inquieto, certamente romperá o jugo dele de sobre o seu pescoço.",
+      "referencia": "Gênesis 27:39-40"
+    },
+    {
+      "texto": "Não tome uma esposa dentre as filhas de Canaã.",
+      "referencia": "Gênesis 28:1"
+    }
+  ]
+},
+{
+  "nome": "Judá",
+  "falas": [
+    {
+      "texto": "Que lucro haveria se matássemos nosso irmão e encobríssemos seu sangue? Vamos vendê-lo aos ismaelitas, mas não lhe façamos mal. Afinal de contas, ele é nosso irmão, nossa carne.",
+      "referencia": "Gênesis 37:26-27"
+    },
+    {
+      "texto": "Envie o rapaz comigo e deixe-nos ir, para que nós, o senhor e os nossos filhos fiquemos vivos, e não morramos. Eu garantirei a segurança dele. Eu mesmo serei responsável por ele. Se eu não o trouxer de volta ao senhor, serei culpado para sempre diante do senhor.",
+      "referencia": "Gênesis 43:8-9"
+    },
+    {
+      "texto": "O que podemos dizer ao meu senhor? O que podemos falar? E como podemos nos provar justos? O verdadeiro Deus descobriu o erro dos seus escravos. Eis que somos escravos do meu senhor, tanto nós como aquele em cuja posse se achou o cálice!",
+      "referencia": "Gênesis 44:16"
+    },
+    {
+      "texto": "Temos um pai idoso e um irmão mais novo, que nasceu quando ele já era idoso. O irmão dele morreu, de modo que ele é o único que resta de sua mãe, e seu pai o ama muito. Então o seu escravo, meu pai, nos disse: ‘Vocês sabem que minha esposa me deu dois filhos. Um deles foi embora, e eu certamente disse: “Ele foi despedaçado!” e não o vi desde então. Se vocês levarem também este, e algo fatal lhe acontecer, vocês certamente farão descer os meus cabelos brancos à Sepultura em sofrimento.’",
+      "referencia": "Gênesis 44:20-22"
+    },
+    {
+      "texto": "Agora, por favor, deixe o seu escravo ficar no lugar do rapaz como escravo do meu senhor, para que o rapaz possa voltar com os seus irmãos. Pois como poderia eu subir até meu pai sem o rapaz? Eu não poderia suportar ver a aflição que sobreviria ao meu pai.",
+      "referencia": "Gênesis 44:33-34"
+    }
+  ]
+},
+{
+  "nome": "Rubem",
+  "falas": [
+    {
+      "texto": "Não lhe tiremos a vida.",
+      "referencia": "Gênesis 37:21"
+    },
+    {
+      "texto": "Não derramem sangue. Lancem-no nesta cisterna, aqui no deserto, mas não lhe façam mal.",
+      "referencia": "Gênesis 37:22"
+    },
+    {
+      "texto": "O menino desapareceu! E eu — o que é que vou fazer?",
+      "referencia": "Gênesis 37:30"
+    },
+    {
+      "texto": "Eu não lhes disse: ‘Não pequem contra o menino’? Mas vocês não escutaram. Agora certamente está sendo exigida uma prestação de contas pelo sangue dele.",
+      "referencia": "Gênesis 42:22"
+    },
+    {
+      "texto": "O senhor pode matar meus dois filhos se eu não o trouxer de volta ao senhor. Entregue-o aos meus cuidados, e eu o devolverei ao senhor.",
+      "referencia": "Gênesis 42:37"
+    }
+  ]
+},
+{
+  "nome": "Sara",
+  "falas": [
+    {
+      "texto": "Agora que estou velha e meu senhor está idoso, terei realmente essa alegria?",
+      "referencia": "Gênesis 18:12"
+    },
+    {
+      "texto": "Eu não ri!",
+      "referencia": "Gênesis 18:15"
+    },
+    {
+      "texto": "Deus me deu motivo para rir; todo aquele que souber disso rirá comigo.",
+      "referencia": "Gênesis 21:6"
+    },
+    {
+      "texto": "Quem poderia ter dito a Abraão: ‘Sara certamente amamentará filhos’? No entanto, eu lhe dei um filho na sua velhice.",
+      "referencia": "Gênesis 21:7"
+    }
+  ]
+},
+{
+  "nome": "Raquel",
+  "falas": [
+    {
+      "texto": "Dê-me filhos, senão eu morrerei.",
+      "referencia": "Gênesis 30:1"
+    },
+    {
+      "texto": "Aqui está a minha escrava Bila. Tenha relações com ela, para que ela tenha filhos para mim e assim, por meio dela, eu também tenha filhos.",
+      "referencia": "Gênesis 30:3"
+    },
+    {
+      "texto": "Deus agiu como meu juiz e também escutou a minha voz, de modo que me deu um filho.",
+      "referencia": "Gênesis 30:6"
+    },
+    {
+      "texto": "Em lutas árduas lutei com a minha irmã e saí vencedora!",
+      "referencia": "Gênesis 30:8"
+    },
+    {
+      "texto": "Dê-me, por favor, algumas mandrágoras do seu filho.",
+      "referencia": "Gênesis 30:14"
+    }
+  ]
+},
+{
+  "nome": "Agar",
+  "falas": [
+    {
+      "texto": "Estou fugindo de Sarai, minha senhora.",
+      "referencia": "Gênesis 16:8"
+    },
+    {
+      "texto": "Tu és um Deus que vê.",
+      "referencia": "Gênesis 16:13"
+    },
+    {
+      "texto": "Não quero ver meu filho morrer.",
+      "referencia": "Gênesis 21:16"
+    }
+  ]
+},
+{
+  "nome": "Lia",
+  "falas": [
+    {
+      "texto": "É porque Jeová olhou para a minha aflição, pois agora o meu marido começará a amar-me.",
+      "referencia": "Gênesis 29:32"
+    },
+    {
+      "texto": "É porque Jeová me ouviu, visto que não era amada; assim, também me deu este.",
+      "referencia": "Gênesis 29:33"
+    },
+    {
+      "texto": "Agora, o meu marido irá unir-se a mim, porque lhe dei três filhos.",
+      "referencia": "Gênesis 29:34"
+    },
+    {
+      "texto": "Desta vez, louvarei a Jeová.",
+      "referencia": "Gênesis 29:35"
+    },
+    {
+      "texto": "Deus deu-me o meu salário, porque dei a minha serva ao meu marido.",
+      "referencia": "Gênesis 30:18"
+    }
+  ]
+},
+{
+  "nome": "Jó",
+  "falas": [
+    {
+      "texto": "Nu saí do ventre da minha mãe, e nu voltarei. Jeová deu, e Jeová tirou. Que o nome de Jeová continue a ser louvado.",
+      "referencia": "Jó 1:21"
+    },
+    {
+      "texto": "Por que não morri ao nascer? Por que não pereci quando saí do ventre?",
+      "referencia": "Jó 3:11"
+    },
+    {
+      "texto": "Não tenho paz, nem sossego, nem descanso; as dificuldades não param de vir.",
+      "referencia": "Jó 3:26"
+    },
+    {
+      "texto": "Agora que meu olho viu tudo isso, meu coração sente repugnância de mim, e eu me arrependo em pó e cinzas.",
+      "referencia": "Jó 42:6"
+    },
+    {
+      "texto": "Minha carne está coberta de vermes e de crostas de pó; minha pele está cheia de feridas e de pus.",
+      "referencia": "Jó 7:5"
+    },
+    {
+      "texto": "Lembra-te de que a minha vida é como o vento; de que os meus olhos nunca mais verão a felicidade.",
+      "referencia": "Jó 7:7"
+    },
+    {
+      "texto": "Eu detesto a minha vida! Vou desabafar as minhas queixas. Vou falar na minha amargura.",
+      "referencia": "Jó 10:1"
+    },
+    {
+      "texto": "Pois sei que meu redentor está vivo; ele virá depois e se levantará sobre a terra.",
+      "referencia": "Jó 19:25"
+    },
+    {
+      "texto": "Até eu morrer, não renunciarei à minha integridade!",
+      "referencia": "Jó 27:5"
+    },
+    {
+      "texto": "Sou indigno! O que posso te responder? Ponho a mão sobre a boca.",
+      "referencia": "Jó 40:4"
+    }
+  ]
+},
+{
+  "nome": "Elifaz",
+  "falas": [
+    {
+      "texto": "Lembra-te, por favor: que inocente jamais pereceu? E onde foram destruídos os justos?",
+      "referencia": "Jó 4:7"
+    },
+    {
+      "texto": "Os que planejam a maldade e semeiam o sofrimento colhem exatamente isso.",
+      "referencia": "Jó 4:8"
+    },
+    {
+      "texto": "Veja! Ele não confia nos seus santos, e nem mesmo os céus são puros aos seus olhos.",
+      "referencia": "Jó 15:15"
+    },
+    {
+      "texto": "Pode um homem ser útil para Deus? Pode alguém com perspicácia ser de algum proveito para ele?",
+      "referencia": "Jó 22:2"
+    },
+    {
+      "texto": "Volte a Deus, e você terá paz; assim lhe virá o que é bom.",
+      "referencia": "Jó 22:21"
+    }
+  ]
+},
+{
+  "nome": "Bildade",
+  "falas": [
+    {
+      "texto": "Até quando continuarás a falar assim? As palavras da tua boca não passam de uma forte rajada de vento!",
+      "referencia": "Jó 8:2"
+    },
+    {
+      "texto": "Se os teus filhos pecaram contra ele, ele deixou-os ser punidos por causa da rebeldia deles.",
+      "referencia": "Jó 8:4"
+    },
+    {
+      "texto": "E, embora o teu começo tenha sido pequeno, o teu futuro seria grande.",
+      "referencia": "Jó 8:7"
+    },
+    {
+      "texto": "Lembra-te de que somos apenas de ontem e não sabemos nada, pois os nossos dias na terra são apenas uma sombra.",
+      "referencia": "Jó 8:9"
+    },
+    {
+      "texto": "Como pode o homem mortal ser justo diante de Deus? Ou como pode alguém nascido de uma mulher ser puro?",
+      "referencia": "Jó 25:4"
+    }
+  ]
+},
+{
+  "nome": "Zofar",
+  "falas": [
+    {
+      "texto": "Será que todas essas palavras ficarão sem resposta, ou será que muita conversa faz alguém ter razão?",
+      "referencia": "Jó 11:2"
+    },
+    {
+      "texto": "Por acaso você pode descobrir as coisas profundas de Deus ou descobrir tudo sobre o Todo-Poderoso?",
+      "referencia": "Jó 11:7"
+    },
+    {
+      "texto": "Se você apenas preparasse o coração e estendesse as mãos para ele!",
+      "referencia": "Jó 11:13"
+    },
+    {
+      "texto": "Então você poderá erguer a cabeça sem se envergonhar; poderá manter-se firme, sem ter medo.",
+      "referencia": "Jó 11:15"
+    },
+    {
+      "texto": "Que o grito de alegria de quem é mau é passageiro, e que a alegria do ímpio dura apenas um instante.",
+      "referencia": "Jó 20:5"
+    }
+  ]
+},
+{
+  "nome": "Eliú",
+  "falas": [
+    {
+      "texto": "Sou jovem, e vocês são idosos. Por isso eu respeitosamente fiquei calado e não me atrevi a dizer-lhes o que sei.",
+      "referencia": "Jó 32:6"
+    },
+    {
+      "texto": "É o espírito que está no homem e o sopro do Todo-Poderoso que dá entendimento.",
+      "referencia": "Jó 32:8"
+    },
+    {
+      "texto": "Por isso meu coração me impele a falar; dentro de mim há palavras como vinho que não tem saída, como odres novos que estão prestes a estourar.",
+      "referencia": "Jó 32:18-19"
+    },
+    {
+      "texto": "Longe está do verdadeiro Deus agir com maldade, e do Todo-Poderoso agir com injustiça!",
+      "referencia": "Jó 34:10"
+    },
+    {
+      "texto": "Pois os olhos dele estão sobre os caminhos do homem, e ele vê todos os seus passos.",
+      "referencia": "Jó 34:21"
+    },
+    {
+      "texto": "Deus é maior do que o homem mortal. Por que você deveria lutar contra ele, dizendo que ele não responde a nenhuma das suas palavras?",
+      "referencia": "Jó 33:12-13"
+    },
+    {
+      "texto": "Se você tem algo a dizer, responda-me; fale, pois quero provar que você é justo.",
+      "referencia": "Jó 33:32"
+    },
+    {
+      "texto": "Escute isto, ó Jó; pare e reflita nas obras maravilhosas de Deus.",
+      "referencia": "Jó 37:14"
+    },
+    {
+      "texto": "Você sabe como Deus controla as nuvens e faz brilhar o relâmpago da sua nuvem?",
+      "referencia": "Jó 37:15"
+    },
+    {
+      "texto": "Ele é sublime em poder, e não depreciará o juízo e a abundância da justiça. Portanto, temam-no os homens.",
+      "referencia": "Jó 37:23-24"
+    }
+  ]
+},
+{
+  "nome": "Elias",
+  "falas": [
+    {
+      "texto": "Tão certo como vive Jeová, o Deus de Israel, a quem sirvo, não haverá nem orvalho nem chuva durante estes anos, a não ser que eu ordene!",
+      "referencia": "1 Reis 17:1"
+    },
+    {
+      "texto": "Dê-me o seu filho.",
+      "referencia": "1 Reis 17:19"
+    },
+    {
+      "texto": "Ó Jeová, meu Deus, será que também estás causando calamidade à viúva que me hospedou, matando o filho dela?",
+      "referencia": "1 Reis 17:20"
+    },
+    {
+      "texto": "Até quando ficarão indecisos entre duas opiniões? Se Jeová é o verdadeiro Deus, sigam-no; mas, se é Baal, sigam-no.",
+      "referencia": "1 Reis 18:21"
+    },
+    {
+      "texto": "O Deus que responder com fogo é o verdadeiro Deus.",
+      "referencia": "1 Reis 18:24"
+    },
+    {
+      "texto": "Ó Jeová, Deus de Abraão, Isaque e Israel, que hoje se saiba que tu és Deus em Israel, que eu sou teu servo e que fiz todas estas coisas por tua palavra. Responde-me, ó Jeová, responde-me, para que este povo saiba que tu, Jeová, és o verdadeiro Deus e que estás fazendo o coração deles voltar para ti.",
+      "referencia": "1 Reis 18:36-37"
+    },
+    {
+      "texto": "Prendam os profetas de Baal! Não deixem nenhum deles escapar!",
+      "referencia": "1 Reis 18:40"
+    },
+    {
+      "texto": "Já chega! Agora, ó Jeová, tira a minha vida, pois não sou melhor do que os meus antepassados.",
+      "referencia": "1 Reis 19:4"
+    },
+    {
+      "texto": "Fui absolutamente zeloso por Jeová, o Deus dos exércitos; pois o povo de Israel abandonou o teu pacto, derrubou os teus altares e matou os teus profetas à espada, e só eu fiquei. Agora eles estão procurando tirar a minha vida.",
+      "referencia": "1 Reis 19:10"
+    },
+    {
+      "texto": "Se eu sou homem do verdadeiro Deus, que desça fogo dos céus e consuma você e os seus 50 soldados.",
+      "referencia": "2 Reis 1:10"
+    }
+  ]
+},
+{
+  "nome": "Eliseu",
+  "falas": [
+    {
+      "texto": "Tão certo como Jeová vive e como o senhor vive, não o deixarei.",
+      "referencia": "2 Reis 2:2"
+    },
+    {
+      "texto": "Por favor, dê-me uma porção dupla do seu espírito.",
+      "referencia": "2 Reis 2:9"
+    },
+    {
+      "texto": "Tão certo como vive Jeová dos exércitos, a quem sirvo, se eu não tivesse consideração por Jeosafá, rei de Judá, eu não olharia para o senhor nem lhe daria atenção.",
+      "referencia": "2 Reis 3:14"
+    },
+    {
+      "texto": "Assim diz Jeová: ‘Cavem muitas valas neste vale, pois assim diz Jeová: “Vocês não verão vento nem chuva; contudo, este vale se encherá de água e vocês beberão dela, vocês, seus rebanhos e seus animais de carga.”’",
+      "referencia": "2 Reis 3:16-17"
+    },
+    {
+      "texto": "O que posso fazer por você? Diga-me o que você tem em casa.",
+      "referencia": "2 Reis 4:2"
+    },
+    {
+      "texto": "Nesta época, no ano que vem, você estará com um filho nos braços.",
+      "referencia": "2 Reis 4:16"
+    },
+    {
+      "texto": "Por que o senhor rasgou a sua roupa? Por favor, deixe o homem vir a mim, para que ele saiba que há um profeta em Israel.",
+      "referencia": "2 Reis 5:8"
+    },
+    {
+      "texto": "Vá, lave-se sete vezes no Jordão, e sua carne será restaurada, e você ficará puro.",
+      "referencia": "2 Reis 5:10"
+    },
+    {
+      "texto": "Não tenha medo, porque mais são os que estão conosco do que os que estão com eles.",
+      "referencia": "2 Reis 6:16"
+    },
+    {
+      "texto": "Escutem a palavra de Jeová. Assim diz Jeová: ‘Amanhã, por volta desta hora, no portão de Samaria, um seá de farinha fina valerá um siclo, e dois seás de cevada valerão um siclo.’",
+      "referencia": "2 Reis 7:1"
+    }
+  ]
+},
+{
+  "nome": "Eli",
+  "falas": [
+    {
+      "texto": "Por que vocês continuam fazendo essas coisas? Pois ouço de todo o povo estas coisas más sobre vocês.",
+      "referencia": "1 Samuel 2:23"
+    },
+    {
+      "texto": "Não, meus filhos, pois não é boa a notícia que ouço, que o povo de Jeová está espalhando.",
+      "referencia": "1 Samuel 2:24"
+    },
+    {
+      "texto": "Não o chamei. Volte a deitar-se.",
+      "referencia": "1 Samuel 3:5"
+    },
+    {
+      "texto": "Qual é a palavra que ele lhe falou? Por favor, não a esconda de mim.",
+      "referencia": "1 Samuel 3:17"
+    },
+    {
+      "texto": "É de Jeová. Faça ele o que for bom aos seus olhos.",
+      "referencia": "1 Samuel 3:18"
+    }
+  ]
+},
+{
+  "nome": "Adão",
+  "falas": [
+    {
+      "texto": "Esta, por fim, é osso dos meus ossos e carne da minha carne. Ela será chamada ‘mulher’, porque do homem foi tirada.",
+      "referencia": "Gênesis 2:23"
+    },
+    {
+      "texto": "Ouvi a tua voz no jardim, mas fiquei com medo porque eu estava nu, por isso me escondi.",
+      "referencia": "Gênesis 3:10"
+    },
+    {
+      "texto": "A mulher que me deste para estar comigo, foi ela que me deu do fruto da árvore, por isso comi.",
+      "referencia": "Gênesis 3:12"
+    }
+  ]
+},
+{
+  "nome": "Eva",
+  "falas": [
+    {
+      "texto": "Do fruto das árvores do jardim podemos comer.",
+      "referencia": "Gênesis 3:2"
+    },
+    {
+      "texto": "Mas, quanto a comer do fruto da árvore que está no meio do jardim, Deus disse: ‘Não deveis comer dele, não, nem deveis tocar nele, para que não morrais.’",
+      "referencia": "Gênesis 3:3"
+    },
+    {
+      "texto": "A serpente me enganou, por isso comi.",
+      "referencia": "Gênesis 3:13"
+    }
+  ]
+},
+{
+  "nome": "Caim",
+  "falas": [
+    {
+      "texto": "Vamos ao campo.",
+      "referencia": "Gênesis 4:8"
+    },
+    {
+      "texto": "Não sei. Será que eu sou guardião do meu irmão?",
+      "referencia": "Gênesis 4:9"
+    },
+    {
+      "texto": "A punição pelo meu erro é pesada demais para suportar.",
+      "referencia": "Gênesis 4:13"
+    },
+    {
+      "texto": "Hoje me expulsas desta terra, e ficarei escondido da tua face; eu me tornarei errante e fugitivo na terra, e quem me encontrar certamente me matará.",
+      "referencia": "Gênesis 4:14"
+    }
+  ]
+},
+{
+  "nome": "Enoque",
+  "falas": [
+    {
+      "texto": "Vejam! Jeová veio com as suas santas miríades para executar julgamento contra todos e para condenar todos os ímpios por todas as ações ímpias que fizeram de modo ímpio e por todas as coisas chocantes que os pecadores ímpios disseram contra ele.",
+      "referencia": "Judas 14-15"
+    }
+  ]
+},
+{
+  "nome": "Filipe",
+  "falas": [
+    {
+      "texto": "Achamos aquele sobre quem Moisés escreveu na Lei, e sobre quem os Profetas também escreveram: Jesus, filho de José, de Nazaré.",
+      "referencia": "João 1:45"
+    },
+    {
+      "texto": "Venha e veja.",
+      "referencia": "João 1:46"
+    },
+    {
+      "texto": "Pães no valor de 200 denários não são suficientes nem para que cada um coma um pouco.",
+      "referencia": "João 6:7"
+    },
+    {
+      "texto": "Senhor, mostre-nos o Pai, e isso é suficiente para nós.",
+      "referencia": "João 14:8"
+    }
+  ]
+},
+{
+  "nome": "Natanael",
+  "falas": [
+    {
+      "texto": "Pode sair algo bom de Nazaré?",
+      "referencia": "João 1:46"
+    },
+    {
+      "texto": "Como é que o senhor me conhece?",
+      "referencia": "João 1:48"
+    },
+    {
+      "texto": "Rabi, o senhor é o Filho de Deus, o senhor é o Rei de Israel.",
+      "referencia": "João 1:49"
+    }
+  ]
+},
+{
+  "nome": "Tomé",
+  "falas": [
+    {
+      "texto": "Vamos também, para morrermos com ele.",
+      "referencia": "João 11:16"
+    },
+    {
+      "texto": "Senhor, não sabemos para onde vai. Como podemos saber o caminho?",
+      "referencia": "João 14:5"
+    },
+    {
+      "texto": "Se eu não vir nas mãos dele a marca dos pregos, não colocar o dedo na marca dos pregos e não colocar a mão no lado dele, de modo algum acreditarei.",
+      "referencia": "João 20:25"
+    },
+    {
+      "texto": "Meu Senhor e meu Deus!",
+      "referencia": "João 20:28"
     }
   ]
 }
