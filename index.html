@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quem disse?</title>
+  <style>
+    * { box-sizing: border-box; }
+
+    :root {
+      --bg: #f5f1e8;
+      --card: #fffdf8;
+      --text: #25231f;
+      --muted: #756f64;
+      --accent: #8b5e34;
+      --accent-dark: #674326;
+      --border: #ded5c6;
+    }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      font-family: Georgia, "Times New Roman", serif;
+      background:
+        radial-gradient(circle at top, rgba(139,94,52,.08), transparent 35%),
+        var(--bg);
+      color: var(--text);
+    }
+
+    .app {
+      width: min(900px, calc(100% - 32px));
+      margin: 0 auto;
+      padding: 48px 0;
+    }
+
+    header {
+      text-align: center;
+      margin-bottom: 36px;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: clamp(42px, 8vw, 72px);
+      letter-spacing: -2px;
+    }
+
+    .subtitle {
+      margin: 10px 0 0;
+      color: var(--muted);
+      font-family: Arial, sans-serif;
+      font-size: 15px;
+    }
+
+    .screen {
+      display: none;
+    }
+
+    .screen.active {
+      display: block;
+    }
+
+    .start-card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 22px;
+      padding: 48px 28px;
+      text-align: center;
+      box-shadow: 0 12px 35px rgba(60,45,25,.08);
+    }
+
+    .start-card p {
+      max-width: 560px;
+      margin: 0 auto 28px;
+      line-height: 1.7;
+      color: var(--muted);
+      font-size: 18px;
+    }
+
+    button {
+      border: 0;
+      border-radius: 12px;
+      padding: 15px 24px;
+      background: var(--accent);
+      color: white;
+      font-weight: 700;
+      font-size: 16px;
+      cursor: pointer;
+      transition: transform .15s, background .15s;
+      font-family: Arial, sans-serif;
+    }
+
+    button:hover {
+      background: var(--accent-dark);
+      transform: translateY(-1px);
+    }
+
+    button.secondary {
+      background: transparent;
+      color: var(--accent-dark);
+      border: 1px solid var(--accent);
+    }
+
+    .game-top {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 16px;
+      margin-bottom: 18px;
+      font-family: Arial, sans-serif;
+    }
+
+    .counter {
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    .character {
+      text-align: center;
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 22px;
+      padding: 30px 24px;
+      margin-bottom: 18px;
+    }
+
+    .character-label {
+      color: var(--muted);
+      font-family: Arial, sans-serif;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      font-size: 11px;
+      margin-bottom: 8px;
+    }
+
+    .character-name {
+      font-size: clamp(30px, 6vw, 48px);
+      margin: 0;
+    }
+
+    .phrases {
+      display: grid;
+      gap: 14px;
+    }
+
+    .phrase {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 24px;
+    }
+
+    .quote {
+      margin: 0 0 14px;
+      font-size: 20px;
+      line-height: 1.6;
+    }
+
+    .reference {
+      color: var(--accent);
+      font-family: Arial, sans-serif;
+      font-size: 14px;
+      font-weight: 700;
+    }
+
+    .actions {
+      display: flex;
+      justify-content: center;
+      gap: 12px;
+      margin-top: 24px;
+      flex-wrap: wrap;
+    }
+
+    .end-card {
+      text-align: center;
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 22px;
+      padding: 45px 25px;
+    }
+
+    .end-card h2 {
+      font-size: 34px;
+      margin-top: 0;
+    }
+
+    .error {
+      background: #fff0f0;
+      border: 1px solid #e0b8b8;
+      color: #7a2525;
+      padding: 18px;
+      border-radius: 12px;
+      font-family: Arial, sans-serif;
+    }
+
+    @media (max-width: 600px) {
+      .app { padding: 28px 0; }
+      .start-card, .character { padding: 30px 20px; }
+      .phrase { padding: 19px; }
+      .quote { font-size: 18px; }
+      .game-top { align-items: flex-start; }
+    }
+  </style>
+</head>
+<body>
+  <main class="app">
+    <header>
+      <h1>Quem disse?</h1>
+      <p class="subtitle">Frases de personagens bíblicos</p>
+    </header>
+
+    <section id="startScreen" class="screen active">
+      <div class="start-card">
+        <p>
+          Descubra as falas dos personagens bíblicos.
+          A cada rodada, um personagem é selecionado aleatoriamente
+          e suas cinco falas são apresentadas.
+        </p>
+        <button id="startButton">Iniciar jogo</button>
+      </div>
+    </section>
+
+    <section id="gameScreen" class="screen">
+      <div class="game-top">
+        <span id="counter" class="counter"></span>
+        <button id="restartButton" class="secondary">Recomeçar</button>
+      </div>
+
+      <div class="character">
+        <div class="character-label">Quem disse?</div>
+        <h2 id="characterName" class="character-name"></h2>
+      </div>
+
+      <div id="phrases" class="phrases"></div>
+
+      <div class="actions">
+        <button id="nextButton">Próximo personagem</button>
+      </div>
+    </section>
+
+    <section id="endScreen" class="screen">
+      <div class="end-card">
+        <h2>Fim da partida</h2>
+        <p>Todos os personagens do banco já foram apresentados.</p>
+        <button id="playAgainButton">Jogar novamente</button>
+      </div>
+    </section>
+
+    <div id="errorBox" class="error" hidden></div>
+  </main>
+
+  <script>
+    let personagens = [];
+    let disponiveis = [];
+    let personagemAtual = null;
+
+    const startScreen = document.getElementById("startScreen");
+    const gameScreen = document.getElementById("gameScreen");
+    const endScreen = document.getElementById("endScreen");
+    const errorBox = document.getElementById("errorBox");
+
+    const characterName = document.getElementById("characterName");
+    const phrases = document.getElementById("phrases");
+    const counter = document.getElementById("counter");
+
+    function mostrarTela(tela) {
+      [startScreen, gameScreen, endScreen].forEach(el => {
+        el.classList.remove("active");
+      });
+      tela.classList.add("active");
+    }
+
+    async function carregarBanco() {
+      try {
+        const resposta = await fetch("banco.json", { cache: "no-store" });
+
+        if (!resposta.ok) {
+          throw new Error("Não foi possível carregar o banco.json.");
+        }
+
+        const dados = await resposta.json();
+
+        if (!dados.personagens || !Array.isArray(dados.personagens)) {
+          throw new Error("O banco.json não contém uma lista válida de personagens.");
+        }
+
+        personagens = dados.personagens;
+        disponiveis = [...personagens];
+      } catch (erro) {
+        errorBox.hidden = false;
+        errorBox.textContent =
+          "Não foi possível carregar o banco de dados. " +
+          "Abra o jogo por um servidor local (por exemplo, Live Server) " +
+          "em vez de abrir o index.html diretamente.";
+        console.error(erro);
+      }
+    }
+
+    function sortearPersonagem() {
+      if (disponiveis.length === 0) {
+        mostrarTela(endScreen);
+        return;
+      }
+
+      const indice = Math.floor(Math.random() * disponiveis.length);
+      personagemAtual = disponiveis.splice(indice, 1)[0];
+
+      renderizarPersonagem();
+    }
+
+    function renderizarPersonagem() {
+      characterName.textContent = personagemAtual.nome;
+      phrases.innerHTML = "";
+
+      personagemAtual.falas.forEach(fala => {
+        const card = document.createElement("article");
+        card.className = "phrase";
+
+        const quote = document.createElement("p");
+        quote.className = "quote";
+        quote.textContent = `“${fala.texto}”`;
+
+        const reference = document.createElement("div");
+        reference.className = "reference";
+        reference.textContent = fala.referencia;
+
+        card.appendChild(quote);
+        card.appendChild(reference);
+        phrases.appendChild(card);
+      });
+
+      const total = personagens.length;
+      const exibidos = total - disponiveis.length;
+      counter.textContent = `${exibidos} de ${total}`;
+    }
+
+    function iniciarJogo() {
+      disponiveis = [...personagens];
+      mostrarTela(gameScreen);
+      sortearPersonagem();
+    }
+
+    document.getElementById("startButton").addEventListener("click", iniciarJogo);
+    document.getElementById("playAgainButton").addEventListener("click", iniciarJogo);
+    document.getElementById("nextButton").addEventListener("click", sortearPersonagem);
+    document.getElementById("restartButton").addEventListener("click", iniciarJogo);
+
+    carregarBanco();
+  </script>
+</body>
+</html>

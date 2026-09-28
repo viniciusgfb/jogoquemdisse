@@ -1,0 +1,29 @@
+{
+  "personagens": [
+    {
+      "nome": "Daniel",
+      "falas": [
+        {
+          "texto": "Que o nome de Deus seja louvado por toda a eternidade, pois somente ele tem sabedoria e poder.",
+          "referencia": "Daniel 2:20"
+        },
+        {
+          "texto": "Mas há nos céus um Deus que revela segredos, e ele revelou ao rei Nabucodonosor o que acontecerá na parte final dos dias.",
+          "referencia": "Daniel 2:28"
+        },
+        {
+          "texto": "Este segredo foi-me revelado, não por eu ter mais sabedoria do que qualquer outra pessoa, mas, antes, para que se revele a interpretação ao rei, de modo a que o senhor entenda os pensamentos do seu coração.",
+          "referencia": "Daniel 2:30"
+        },
+        {
+          "texto": "Ó rei, viva para sempre! Meu Deus enviou seu anjo e fechou a boca dos leões, e eles não me machucaram, pois fui considerado inocente diante dele; e também não fiz nada contra o senhor, ó rei.",
+          "referencia": "Daniel 6:21-22"
+        },
+        {
+          "texto": "Ó, Jeová, o verdadeiro Deus, o Grande, que inspira temor, aquele que guarda seu pacto e demonstra amor leal aos que o amam e aos que guardam os seus mandamentos.",
+          "referencia": "Daniel 9:4"
+        }
+      ]
+    }
+  ]
+}
