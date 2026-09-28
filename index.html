@@ -4,6 +4,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Quem disse? — jogo de frases de personagens bíblicos.">
+  <meta name="theme-color" content="#f5f1e8">
+  <link rel="manifest" href="manifest.json">
+  <link rel="icon" type="image/png" href="icone.png">
+  <link rel="apple-touch-icon" href="icone-192.png">
   <title>Quem disse?</title>
 
   <style>
@@ -341,9 +345,9 @@
 
         <ol class="rules">
           <li>Uma pessoa fica com o celular e é o <strong>leitor</strong> da rodada.</li>
-          <li>O leitor vê o personagem e escolhe uma frase para ler por vez, sem revelar quem é.</li>
+          <li>O leitor vê o personagem e lê uma frase por vez, sem revelar quem é.</li>
           <li>Se alguém errar, o leitor lê outra frase para o próximo jogador.</li>
-          <li>Quem acertar marca <strong>1 ponto</strong>. Depois, começa uma nova rodada com outro personagem e outro leitor.</li>
+          <li>Quem acertar marca <strong>1 ponto</strong>. Depois, começa uma nova rodada com outro personagem.</li>
         </ol>
       </div>
 
@@ -612,6 +616,15 @@
     document
       .getElementById("closeCharacterList")
       .addEventListener("click", fecharListaPersonagens);
+
+    // Registra o Service Worker para permitir instalação e uso offline.
+    if ("serviceWorker" in navigator) {
+      window.addEventListener("load", function() {
+        navigator.serviceWorker.register("service-worker.js").catch(function(erro) {
+          console.warn("Service Worker não pôde ser registrado:", erro);
+        });
+      });
+    }
 
     characterModal.addEventListener("click", function(event) {
       if (event.target === characterModal) {
