@@ -26,6 +26,135 @@
       ]
     },
     {
+  "nome": "Jefté",
+  "falas": [
+    {
+      "texto": "Não foram vocês que me odiaram tanto a ponto de me expulsar da casa do meu pai? Por que vocês vêm a mim agora que estão em aflição?",
+      "referencia": "Juízes 11:7"
+    },
+    {
+      "texto": "Se vocês me levarem de volta para lutar contra os amonitas e Jeová os derrotar para mim, então certamente me tornarei o líder de vocês!",
+      "referencia": "Juízes 11:9"
+    },
+    {
+      "texto": "O que você tem contra mim para atacar a minha terra?",
+      "referencia": "Juízes 11:12"
+    },
+    {
+      "texto": "Você não toma posse de tudo que o seu deus, Quemós, lhe dá? Assim, nós expulsaremos todos os que Jeová, nosso Deus, expulsar de diante de nós.",
+      "referencia": "Juízes 11:24"
+    },
+    {
+      "texto": "Será que você é melhor do que Balaque, filho de Zipor, rei de Moabe? Alguma vez ele entrou em conflito com Israel ou lutou contra eles?",
+      "referencia": "Juízes 11:25"
+    },
+    {
+      "texto": "Não pequei contra você, mas você está errado em me atacar. Que Jeová, o Juiz, julgue hoje entre o povo de Israel e o povo de Amom.",
+      "referencia": "Juízes 11:27"
+    },
+    {
+      "texto": "Se entregares os amonitas nas minhas mãos, então aquele que sair da porta da minha casa ao meu encontro, quando eu voltar em paz da guerra contra os amonitas, se tornará de Jeová, e eu o oferecerei como oferta queimada.",
+      "referencia": "Juízes 11:30-31"
+    },
+    {
+      "texto": "Ai, minha filha! Você partiu meu coração, pois se tornou aquela que eu bani. Fiz um voto a Jeová e não posso voltar atrás.",
+      "referencia": "Juízes 11:35"
+    },
+    {
+      "texto": "Vá!",
+      "referencia": "Juízes 11:38"
+    },
+    {
+      "texto": "Eu os convoquei para lutar contra os amonitas, mas vocês não vieram me salvar das mãos deles. Portanto, agora vou atear fogo à casa de vocês e queimá-los junto com ela.",
+      "referencia": "Juízes 12:2-3"
+    }
+  ]
+},
+{
+  "nome": "Aitofel",
+  "falas": [
+    {
+      "texto": "Tenha relações com as concubinas do seu pai, aquelas que ele deixou para tomar conta da casa. Quando todo o Israel souber que o seu pai passou a odiar você, os que apoiam você se fortalecerão.",
+      "referencia": "2 Samuel 16:21"
+    },
+    {
+      "texto": "Por favor, deixe-me escolher 12.000 homens e ir hoje à noite atrás de Davi.",
+      "referencia": "2 Samuel 17:1"
+    },
+    {
+      "texto": "Eu o atacarei quando ele estiver cansado e sem forças, e vou fazer com que ele entre em pânico. Todos os que estão com ele fugirão, e eu matarei somente o rei.",
+      "referencia": "2 Samuel 17:2"
+    },
+    {
+      "texto": "Então trarei todo o povo de volta a você. A volta de todo o povo vai depender do que acontecer com o homem a quem você procura. E todo o povo ficará em paz.",
+      "referencia": "2 Samuel 17:3"
+    }
+  ]
+},
+    {
+  "nome": "Absalão",
+  "falas": [
+    {
+      "texto": "Olhe, sua solicitação é justa e legítima, mas não há ninguém da parte do rei para ouvir a sua causa.",
+      "referencia": "2 Samuel 15:3"
+    },
+    {
+      "texto": "Quem me dera ser designado juiz no país! Então todo aquele que tivesse uma causa ou uma questão judicial poderia vir a mim, e eu cuidaria que ele obtivesse justiça.",
+      "referencia": "2 Samuel 15:4"
+    },
+    {
+      "texto": "Por favor, deixe-me ir a Hebrom cumprir o voto que fiz a Jeová.",
+      "referencia": "2 Samuel 15:7"
+    },
+    {
+      "texto": "Se Jeová me levar de volta a Jerusalém, eu apresentarei uma oferta a Jeová.",
+      "referencia": "2 Samuel 15:8"
+    },
+    {
+      "texto": "Assim que vocês ouvirem o som da buzina, anunciem: ‘Absalão se tornou rei em Hebrom!’",
+      "referencia": "2 Samuel 15:10"
+    },
+    {
+      "texto": "É assim que você demonstra amor leal ao seu amigo? Por que você não foi com o seu amigo?",
+      "referencia": "2 Samuel 16:17"
+    },
+    {
+      "texto": "Dê-me um conselho. O que devemos fazer?",
+      "referencia": "2 Samuel 16:20"
+    },
+    {
+      "texto": "Não tenho filho para manter a lembrança do meu nome.",
+      "referencia": "2 Samuel 18:18"
+    }
+  ]
+},
+    {
+  "nome": "Jairo",
+  "falas": [
+    {
+      "texto": "Minha filhinha está gravemente doente. Por favor, venha e ponha as mãos sobre ela, para que possa ficar boa e viver.",
+      "referencia": "Marcos 5:23"
+    }
+  ]
+},
+    {
+  "nome": "Noé",
+  "falas": [
+    {
+      "texto": "Maldito seja Canaã. Torne-se ele o menor entre os escravos dos seus irmãos.",
+      "referencia": "Gênesis 9:25"
+    },
+    {
+      "texto": "Louvado seja Jeová, o Deus de Sem, E torne-se Canaã escravo de Sem.",
+      "referencia": "Gênesis 9:26"
+    },
+    {
+      "texto": "Conceda Deus amplo território a Jafé, E resida ele nas tendas de Sem. Torne-se Canaã escravo dele também.",
+      "referencia": "Gênesis 9:27"
+    }
+  ]
+},
+    {
       "nome": "Jesus",
       "falas": [
         {
