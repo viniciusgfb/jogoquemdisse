@@ -26,6 +26,114 @@
       ]
     },
     {
+  "nome": "Nabucodonosor",
+  "falas": [
+    {
+      "texto": "Tive um sonho, e estou agitado porque quero saber o que sonhei.",
+      "referencia": "Daniel 2:3"
+    },
+    {
+      "texto": "Esta é a minha última palavra: se vocês não me revelarem o sonho e a interpretação dele, serão cortados em pedaços, e as suas casas serão transformadas em latrinas públicas.",
+      "referencia": "Daniel 2:5"
+    },
+    {
+      "texto": "Eu sei muito bem que vocês estão tentando ganhar tempo, porque viram que dei minha última palavra sobre o assunto.",
+      "referencia": "Daniel 2:8"
+    },
+    {
+      "texto": "Você pode realmente me revelar o sonho que tive e a interpretação dele?",
+      "referencia": "Daniel 2:26"
+    },
+    {
+      "texto": "Realmente, o Deus de vocês é Deus de deuses, Senhor de reis e Revelador de segredos, porque você conseguiu revelar este segredo.",
+      "referencia": "Daniel 2:47"
+    },
+    {
+      "texto": "Não foram três homens que amarramos e lançamos no fogo?",
+      "referencia": "Daniel 3:24"
+    },
+    {
+      "texto": "Olhem! Estou vendo quatro homens andando livremente no meio do fogo, e eles não sofrem nenhum dano, e o quarto homem parece um filho dos deuses.",
+      "referencia": "Daniel 3:25"
+    },
+    {
+      "texto": "Sadraque, Mesaque e Abednego, servos do Deus Altíssimo, saiam e venham para cá!",
+      "referencia": "Daniel 3:26"
+    },
+    {
+      "texto": "Louvado seja o Deus de Sadraque, Mesaque e Abednego, que enviou o seu anjo e salvou os seus servos.",
+      "referencia": "Daniel 3:28"
+    },
+    {
+      "texto": "Por isso, dou a ordem de que qualquer pessoa, de todo povo, nação ou língua, que disser alguma coisa contra o Deus de Sadraque, Mesaque e Abednego seja cortada em pedaços.",
+      "referencia": "Daniel 3:29"
+    }
+  ]
+},
+    {
+  "nome": "Senaqueribe",
+  "falas": [
+    {
+      "texto": "Em que vocês estão confiando para permanecer em Jerusalém enquanto ela está cercada?",
+      "referencia": "2 Crônicas 32:10"
+    },
+    {
+      "texto": "Não veem que Ezequias está enganando vocês e os levando a morrer de fome e de sede, ao dizer: “Jeová, nosso Deus, nos livrará das mãos do rei da Assíria”?",
+      "referencia": "2 Crônicas 32:11"
+    },
+    {
+      "texto": "Vocês não sabem o que eu e os meus antepassados fizemos a todos os povos das outras terras?",
+      "referencia": "2 Crônicas 32:13"
+    },
+    {
+      "texto": "Agora, não deixem que Ezequias os engane e iluda desse modo! Não acreditem nele, pois nenhum deus de nenhuma nação ou reino foi capaz de livrar seu povo das minhas mãos e das mãos dos meus antepassados.",
+      "referencia": "2 Crônicas 32:15"
+    },
+    {
+      "texto": "Assim como os deuses das outras nações não foram capazes de livrar seu povo das minhas mãos, o Deus de Ezequias também não livrará seu povo das minhas mãos.",
+      "referencia": "2 Crônicas 32:17"
+    }
+  ]
+},
+    {
+  "nome": "Melquisedeque",
+  "falas": [
+    {
+      "texto": "Bendito seja Abrão pelo Deus Altíssimo, Aquele que fez o céu e a terra;",
+      "referencia": "Gênesis 14:19"
+    },
+    {
+      "texto": "E louvado seja o Deus Altíssimo, Que lhe entregou os seus opressores!",
+      "referencia": "Gênesis 14:20"
+    }
+  ]
+},
+    {
+  "nome": "Rabsaqué",
+  "falas": [
+    {
+      "texto": "Agora, faça uma aposta com o meu senhor, o rei da Assíria: eu lhe darei 2.000 cavalos se você conseguir encontrar cavaleiros suficientes para eles.",
+      "referencia": "2 Reis 18:23"
+    },
+    {
+      "texto": "Agora, será que foi sem a autorização de Jeová que vim contra este lugar para destruí-lo? O próprio Jeová me disse: ‘Vá e destrua essa terra.’",
+      "referencia": "2 Reis 18:25"
+    },
+    {
+      "texto": "Será que foi apenas ao seu senhor e a você que o meu senhor me mandou dizer essas palavras? Não foi também aos homens que estão sentados sobre a muralha, que vão comer o seu próprio excremento e beber a sua própria urina junto com vocês?",
+      "referencia": "2 Reis 18:27"
+    },
+    {
+      "texto": "Ouçam as palavras do grande rei, o rei da Assíria.",
+      "referencia": "2 Reis 18:28 ou Isaías 36:13"
+    },
+    {
+      "texto": "Não escutem a Ezequias, pois assim diz o rei da Assíria: ‘Façam paz comigo e rendam-se, e cada um poderá comer da sua própria videira e da sua própria figueira, e beber água da sua própria cisterna.’",
+      "referencia": "2 Reis 18:31"
+    }
+  ]
+},
+    {
   "nome": "Jefté",
   "falas": [
     {
