@@ -1,6 +1,61 @@
 {
   "personagens": [
     {
+  "nome": "C. T. Russell",
+  "falas": [
+    {
+      "texto": "Um Deus que usasse seu poder para criar seres humanos que de antemão sabia seriam atormentados eternamente, e que os predestinasse a isso, não poderia ser sábio, nem justo e tampouco amoroso. Seu padrão seria mais baixo do que o de muitos homens.",
+      "referencia": "Proclamadores"
+    },
+    {
+      "texto": "Nosso trabalho . . . tem sido de ajuntar estes fragmentos da verdade há muito espalhados e apresentá-los ao povo do Senhor — não como novos, não como nossos, mas como do Senhor.",
+      "referencia": "Proclamadores"
+    },
+    {
+      "texto": "A obra em que o Senhor se agradou em usar nossos humildes talentos tem sido menos uma obra de originação do que de reconstrução, reajuste, harmonização.",
+      "referencia": "Proclamadores"
+    }
+  ]
+},
+    {
+  "nome": "J. F. Rutherford",
+  "falas": [
+    {
+      "texto": "O Rei reina! Vós sois seus agentes de publicidade. Portanto, anunciai, anunciai, anunciai o Rei e seu reino!",
+      "referencia": "Discurso “O Reino”, Congresso de Cedar Point, 8 de setembro de 1922; Testemunhas de Jeová — Proclamadores do Reino de Deus (jv), cap. 7, p. 77"
+    },
+    {
+      "texto": "Desejamos ser conhecidos e chamados pelo nome, a saber, Testemunhas de Jeová.",
+      "referencia": "Resolução “Um Novo Nome”, Congresso de Columbus, 26 de julho de 1931;"
+    },
+    {
+      "texto": "Notareis que a capa é da cor de couro, bege, e com ele vamos passar o couro [dar uma surra] na velha dama.",
+      "referencia": "Testemunhas de Jeová — Proclamadores do Reino de Deus (jv), cap. 7, p. 84; Congresso de Columbus, 18 de setembro de 1937"
+    }
+  ]
+},
+    {
+  "nome": "Nathan H. Knorr",
+  "falas": [
+    {
+      "texto": "Cada vez mais, sentimos a necessidade de uma tradução em linguagem moderna, que esteja em harmonia com a verdade revelada e que nos ajude a entender ainda mais essa verdade por apresentar de forma fiel o sentido dos escritos originais.",
+      "referencia": "Discurso de lançamento da Tradução do Novo Mundo, 2 de agosto de 1950; A Sentinela, 15 de dezembro de 2015, p. 4-8"
+    },
+    {
+      "texto": "O curso de estudo da [escola] tem o propósito exclusivo de preparar-vos para serdes ministros mais capazes nos territórios a que ireis.",
+      "referencia": "Discurso à primeira turma da Escola Bíblica de Gileade, 1.º de fevereiro de 1943"
+    },
+    {
+      "texto": "Estão recebendo preparação adicional para um trabalho similar ao do apóstolo Paulo, Marcos, Timóteo e outros que viajaram em todas as partes do Império Romano proclamando a mensagem do Reino.",
+      "referencia": "Discurso à primeira turma da Escola Bíblica de Gileade, 1.º de fevereiro de 1943"
+    },
+    {
+      "texto": "Há milhões de pessoas nesta terra que precisam de ajuda para entender a Palavra de Deus.",
+      "referencia": "Discurso a uma turma de missionários de Gileade; A Sentinela, 1966, “Missionários para preencher a necessidade”"
+    }
+  ]
+},
+    {
       "nome": "Daniel",
       "falas": [
         {
