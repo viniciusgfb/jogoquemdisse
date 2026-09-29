@@ -70,6 +70,19 @@
     }
   ]
 },
+    {
+  "nome": "Filha de Jefté",
+  "falas": [
+    {
+      "texto": "Meu pai, se o senhor fez um voto a Jeová, faça comigo conforme prometeu, visto que Jeová executou para o senhor vingança sobre os seus inimigos, os amonitas.",
+      "referencia": "Juízes 11:36"
+    },
+    {
+      "texto": "Só peço uma coisa: deixe-me ir aos montes por dois meses para chorar a minha virgindade, apenas eu e as minhas amigas.",
+      "referencia": "Juízes 11:37"
+    }
+  ]
+},
 {
   "nome": "Aitofel",
   "falas": [
@@ -88,6 +101,152 @@
     {
       "texto": "Então trarei todo o povo de volta a você. A volta de todo o povo vai depender do que acontecer com o homem a quem você procura. E todo o povo ficará em paz.",
       "referencia": "2 Samuel 17:3"
+    }
+  ]
+},
+    {
+  "nome": "Satanás",
+  "falas": [
+    {
+      "texto": "Não puseste uma cerca de proteção em volta dele, da sua casa e de tudo o que ele tem? Tu abençoaste o trabalho das suas mãos, e os rebanhos dele se espalham pela terra.",
+      "referencia": "Jó 1:10"
+    },
+    {
+      "texto": "Mas agora, levanta a mão e atinge tudo o que ele tem, e com certeza ele te amaldiçoará na tua própria face.",
+      "referencia": "Jó 1:11"
+    },
+    {
+      "texto": "Pele por pele. O homem dará tudo o que tem pela sua vida.",
+      "referencia": "Jó 2:4"
+    },
+    {
+      "texto": "Mas, agora, para variar, estende a tua mão e atinge-lhe os ossos e a carne, e com certeza ele te amaldiçoará na tua própria face.",
+      "referencia": "Jó 2:5"
+    },
+    {
+      "texto": "Foi isso mesmo que Deus disse, que vocês não devem comer de toda árvore do jardim?",
+      "referencia": "Gênesis 3:1"
+    },
+    {
+      "texto": "Vocês certamente não morrerão.",
+      "referencia": "Gênesis 3:4"
+    },
+    {
+      "texto": "Pois Deus sabe que, no mesmo dia em que comerem dele, seus olhos se abrirão e vocês serão como Deus, sabendo o que é bom e o que é mau.",
+      "referencia": "Gênesis 3:5"
+    },
+    {
+      "texto": "Se você é filho de Deus, diga a estas pedras que se transformem em pães.",
+      "referencia": "Mateus 4:3"
+    },
+    {
+      "texto": "Se você é filho de Deus, jogue-se para baixo, pois está escrito: ‘Ele dará aos seus anjos uma ordem referente a você’ e ‘Eles o carregarão nas mãos, para que não bata com o pé numa pedra’.",
+      "referencia": "Mateus 4:6"
+    },
+    {
+      "texto": "Eu lhe darei tudo isto se você se prostrar e me fizer um ato de adoração.",
+      "referencia": "Mateus 4:9"
+    },
+    {
+      "texto": "Eu lhe darei toda esta autoridade, bem como a glória destes reinos, porque ela me foi entregue e a dou a quem eu quiser.",
+      "referencia": "Lucas 4:6"
+    },
+    {
+      "texto": "Portanto, se você fizer um ato de adoração diante de mim, tudo será seu.",
+      "referencia": "Lucas 4:7"
+    }
+  ]
+},
+    {
+  "nome": "Mulher do fluxo de sangue",
+  "falas": [
+    {
+      "texto": "Se eu apenas tocar na sua roupa, ficarei boa.",
+      "referencia": "Marcos 5:28"
+    }
+  ]
+},
+    {
+    "nome": "Mulher siro-fenícia",
+    "falas": [
+      {
+        "texto": "Sim, senhor; no entanto, até os cachorrinhos debaixo da mesa comem as migalhas que as criancinhas deixam cair.",
+        "referencia": "Marcos 7:28"
+      }
+    ]
+  },
+    {
+  "nome": "Maria Madalena",
+  "falas": [
+    {
+      "texto": "Retiraram o Senhor do túmulo, e não sabemos onde o colocaram.",
+      "referencia": "João 20:2"
+    },
+    {
+      "texto": "Se o senhor o tirou daqui, diga-me onde o colocou, e eu o levarei embora.",
+      "referencia": "João 20:15"
+    },
+    {
+      "texto": "Rabôni!",
+      "referencia": "João 20:16"
+    },
+    {
+      "texto": "Eu vi o Senhor!",
+      "referencia": "João 20:18"
+    }
+  ]
+},
+    {
+  "nome": "Asafe",
+  "falas": [
+    {
+      "texto": "Quanto a mim, meus pés quase se desviaram; por pouco, não escorregaram.",
+      "referencia": "Salmo 73:2"
+    },
+    {
+      "texto": "Certamente foi em vão que mantive puro meu coração e lavei minhas mãos na inocência.",
+      "referencia": "Salmo 73:13"
+    },
+    {
+      "texto": "Mas, se eu tivesse dito essas coisas, eu teria traído o teu povo.",
+      "referencia": "Salmo 73:15"
+    },
+    {
+      "texto": "Até que entrei no grandioso santuário de Deus e compreendi o futuro deles.",
+      "referencia": "Salmo 73:17"
+    },
+    {
+      "texto": "Mas, quanto a mim, achegar-me a Deus é bom para mim.",
+      "referencia": "Salmo 73:28"
+    },
+    {
+      "texto": "Com a minha voz clamarei a Deus; a Deus clamarei, e ele me ouvirá.",
+      "referencia": "Salmo 77:1"
+    },
+    {
+      "texto": "Será que Jeová nos rejeitará eternamente? Será que ele nunca mais nos mostrará favor?",
+      "referencia": "Salmo 77:7"
+    },
+    {
+      "texto": "Acabou para sempre o seu amor leal? Sua promessa chegou ao fim para todas as gerações?",
+      "referencia": "Salmo 77:8"
+    },
+    {
+      "texto": "Vou me lembrar das obras de Jah; vou me lembrar das tuas obras maravilhosas de há muito tempo.",
+      "referencia": "Salmo 77:11"
+    },
+    {
+      "texto": "Vou meditar em todas as tuas atividades e refletir nos teus atos.",
+      "referencia": "Salmo 77:12"
+    }
+  ]
+},
+    {
+  "nome": "Hilquias",
+  "falas": [
+    {
+      "texto": "Achei o livro da Lei na casa de Jeová.",
+      "referencia": "2 Reis 22:8 ou 2 Crônicas 34:15"
     }
   ]
 },
