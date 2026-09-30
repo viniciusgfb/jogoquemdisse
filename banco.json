@@ -3298,8 +3298,25 @@
     }
   ]
 },
+    {
+  "nome": "Zacarias, pai de João Batista",
+  "falas": [
+    {
+      "texto": "Como posso ter certeza disso? Pois sou idoso e minha esposa já está bem avançada em idade.",
+      "referencia": "Lucas 1:18"
+    },
+    {
+      "texto": "Louvado seja Jeová, o Deus de Israel, porque voltou a sua atenção para o seu povo e lhe trouxe livramento. E ele fez surgir para nós um poderoso salvador na casa de Davi, seu servo, assim como ele disse há muito tempo por meio dos seus santos profetas, para nos salvar dos nossos inimigos e das mãos de todos os que nos odeiam, para mostrar misericórdia com relação aos nossos antepassados e para lembrar o Seu santo pacto, o juramento que fez a Abraão, nosso antepassado, de nos conceder, depois de termos sido resgatados das mãos dos inimigos, o privilégio de lhe prestar destemidamente serviço sagrado com lealdade e justiça, diante dele, todos os nossos dias.",
+      "referencia": "Lucas 1:68-75"
+    },
+    {
+      "texto": "Mas, quanto a você, menino, será chamado profeta do Altíssimo, pois irá na frente de Jeová para preparar os caminhos dele, para dar ao Seu povo conhecimento da salvação por meio do perdão dos pecados deles. Por causa da ternura da compaixão do nosso Deus. Por causa dessa compaixão, um amanhecer nos visitará do alto, para dar luz aos sentados na escuridão e na sombra da morte e para guiar nossos pés no caminho da paz.",
+      "referencia": "Lucas 1:76-79"
+    }
+  ]
+},
 {
-  "nome": "Zacarias",
+  "nome": "Zacarias, o profeta",
   "falas": [
     {
       "texto": "Tive uma visão de noite. Havia um homem montado num cavalo vermelho, e ele estava parado entre as murtas no desfiladeiro; e atrás dele havia cavalos vermelhos, castanhos e brancos.",
@@ -3324,6 +3341,57 @@
     {
       "texto": "O que representam os dois feixes de ramos das oliveiras que estão derramando o líquido dourado por meio dos dois tubos de ouro?",
       "referencia": "Zacarias 4:12"
+    }
+  ]
+},
+    {
+  "nome": "Gamaliel",
+  "falas": [
+    {
+      "texto": "Homens de Israel, tomem cuidado com o que vão fazer com esses homens.",
+      "referencia": "Atos 5:35"
+    },
+    {
+      "texto": "Por isso, diante das circunstâncias, digo-lhes: Não se metam com esses homens; deixem-nos em paz. Porque, se esse plano ou essa obra for de homens, será derrubada; mas, se for de Deus, vocês não poderão derrubá-los. Senão, pode ser que vocês estejam até mesmo lutando contra o próprio Deus.",
+      "referencia": "Atos 5:38, 39"
+    }
+  ]
+},
+    {
+  "nome": "Félix",
+  "falas": [
+    {
+      "texto": "Quando Lísias, o comandante militar, descer, decidirei essas questões de vocês.",
+      "referencia": "Atos 24:22"
+    },
+    {
+      "texto": "Por enquanto, pode se retirar, mas, quando eu tiver uma oportunidade, mandarei buscá-lo novamente.",
+      "referencia": "Atos 24:25"
+    }
+  ]
+},
+    {
+  "nome": "Pórcio Festo",
+  "falas": [
+    {
+      "texto": "Você quer subir a Jerusalém e ser julgado por mim ali a respeito dessas coisas?",
+      "referencia": "Atos 25:9"
+    },
+    {
+      "texto": "Você apelou para César; para César irá!",
+      "referencia": "Atos 25:12"
+    },
+    {
+      "texto": "Rei Agripa e todos os homens que estão presentes conosco, vocês estão vendo este homem a respeito de quem toda a multidão dos judeus fez uma petição a mim, tanto em Jerusalém como aqui, gritando que ele não devia mais viver.",
+      "referencia": "Atos 25:24"
+    },
+    {
+      "texto": "Quando os acusadores se levantaram para falar, não apresentaram nenhuma acusação das coisas más que eu tinha imaginado a respeito dele. Eles simplesmente tinham certas disputas com ele a respeito da adoração à sua própria divindade e a respeito de certo Jesus, que estava morto, mas que Paulo afirmava estar vivo.",
+      "referencia": "Atos 25:18-19"
+    },
+    {
+      "texto": "Você está louco, Paulo! O muito estudo está levando você à loucura!",
+      "referencia": "Atos 26:24"
     }
   ]
 },
