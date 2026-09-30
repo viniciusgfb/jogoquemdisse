@@ -106,6 +106,121 @@
   ]
 },
     {
+  "nome": "Neemias",
+  "falas": [
+    {
+      "texto": "Vida longa ao rei! Como eu poderia não estar abatido se a cidade onde meus antepassados estão sepultados está em ruínas e seus portões foram consumidos pelo fogo?",
+      "referencia": "Neemias 2:3"
+    },
+    {
+      "texto": "Se for do agrado do rei, e se o seu servo tiver achado favor diante do senhor, envie-me a Judá, à cidade onde os meus antepassados estão sepultados, para que eu a reconstrua.",
+      "referencia": "Neemias 2:5"
+    },
+    {
+      "texto": "Se for do agrado do rei, que eu receba cartas para entregar aos governadores da região ao oeste do rio Eufrates, para que me deixem passar em segurança até chegar a Judá, e também uma carta para Asafe, guarda do Parque Real, para que ele me forneça madeira para as vigas dos portões da Fortaleza da Casa, das muralhas da cidade e da casa em que vou ficar.",
+      "referencia": "Neemias 2:7-8"
+    },
+    {
+      "texto": "Vocês podem ver que estamos numa situação muito difícil, que Jerusalém está em ruínas e seus portões foram queimados com fogo. Venham, vamos reconstruir as muralhas de Jerusalém, para pôr fim a essa humilhação.",
+      "referencia": "Neemias 2:17"
+    },
+    {
+      "texto": "O Deus dos céus é que nos fará bem-sucedidos, e nós, servos dele, vamos começar a reconstrução; mas vocês não têm parte, nem direitos, nem história em Jerusalém.",
+      "referencia": "Neemias 2:20"
+    },
+    {
+      "texto": "Ouve, ó nosso Deus, porque estamos sendo desprezados; faze recair sobre a cabeça deles a zombaria que lançam sobre nós e entrega-os como despojo a uma terra de cativeiro.",
+      "referencia": "Neemias 4:4"
+    },
+    {
+      "texto": "Não tenham medo deles. Lembrem-se de Jeová, que é grande e inspira temor, e lutem pelos seus irmãos, pelos seus filhos e pelas suas filhas, pelas suas esposas e pelas suas casas.",
+      "referencia": "Neemias 4:14"
+    },
+    {
+      "texto": "Onde quer que ouçam o som da buzina, juntem-se a nós ali. Nosso Deus lutará por nós.",
+      "referencia": "Neemias 4:20"
+    },
+    {
+      "texto": "Cada um de vocês está cobrando juros do seu próprio irmão.",
+      "referencia": "Neemias 5:7"
+    },
+    {
+      "texto": "O que vocês estão fazendo não é certo. Vocês não deveriam andar no temor do nosso Deus por causa da zombaria das nações inimigas?",
+      "referencia": "Neemias 5:9"
+    },
+    {
+      "texto": "Além disso, eu, meus irmãos e meus homens estamos emprestando dinheiro e cereais a eles. Por favor, vamos parar de cobrar juros.",
+      "referencia": "Neemias 5:10"
+    },
+    {
+      "texto": "Por favor, devolvam-lhes hoje mesmo seus campos, suas vinhas, seus olivais e suas casas, e também a porcentagem dos juros que estão cobrando deles pelo dinheiro, pelo cereal, pelo vinho novo e pelo azeite.",
+      "referencia": "Neemias 5:11"
+    },
+    {
+      "texto": "Lembra-te de mim, ó meu Deus, por tudo o que fiz em favor deste povo.",
+      "referencia": "Neemias 5:19"
+    },
+    {
+      "texto": "Estou ocupado com uma obra muito importante e não posso descer. Por que deveria a obra parar enquanto eu a deixasse e descesse até vocês?",
+      "referencia": "Neemias 6:3"
+    },
+    {
+      "texto": "Nada do que você está dizendo aconteceu; você está inventando isso no seu próprio coração.",
+      "referencia": "Neemias 6:8"
+    },
+    {
+      "texto": "Será que um homem como eu deve fugir? Pode um homem como eu entrar no templo e continuar vivo? Não entrarei!",
+      "referencia": "Neemias 6:11"
+    }
+  ]
+},
+    {
+  "nome": "Mordecai",
+  "falas": [
+    {
+      "texto": "Não revele a ninguém que você é judia.",
+      "referencia": "Ester 2:10"
+    },
+    {
+      "texto": "Não imagine que, por estar na casa do rei, você será a única entre os judeus que escapará.",
+      "referencia": "Ester 4:13"
+    },
+    {
+      "texto": "Pois, se você ficar calada agora, o alívio e o livramento virão de outro lugar para os judeus, mas você e a casa do seu pai morrerão. E quem sabe se não foi justamente para uma ocasião como esta que você alcançou a dignidade real?",
+      "referencia": "Ester 4:14"
+    }
+  ]
+},
+    {
+  "nome": "Elisabete (Isabel)",
+  "falas": [
+    {
+      "texto": "É assim que Jeová agiu comigo nestes dias. Ele voltou sua atenção para mim, para tirar a minha desonra entre as pessoas.",
+      "referencia": "Lucas 1:25"
+    },
+    {
+      "texto": "Abençoada é você entre as mulheres, e abençoado é o fruto do seu ventre!",
+      "referencia": "Lucas 1:42"
+    },
+    {
+      "texto": "Então, como é que eu tenho este privilégio, de que a mãe do meu Senhor venha ao meu encontro?",
+      "referencia": "Lucas 1:43"
+    },
+    {
+      "texto": "Pois, assim que o som do seu cumprimento chegou aos meus ouvidos, o bebê no meu ventre pulou de alegria.",
+      "referencia": "Lucas 1:44"
+    },
+    {
+      "texto": "E feliz é aquela que acreditou, porque as coisas que lhe foram faladas por Jeová se cumprirão plenamente.",
+      "referencia": "Lucas 1:45"
+    },
+    {
+      "texto": "Não! Ele se chamará João.",
+      "referencia": "Lucas 1:60"
+    }
+  ]
+},
+    {
   "nome": "João Batista",
   "falas": [
     {
