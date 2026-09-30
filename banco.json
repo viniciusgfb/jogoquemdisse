@@ -105,6 +105,92 @@
     }
   ]
 },
+   {
+  "nome": "Jeosafá",
+  "falas": [
+    {
+      "texto": "Ó Jeová, Deus de nossos antepassados, acaso não és Deus nos céus e não dominas sobre todos os reinos das nações, e não há na tua mão poder e potência, não havendo quem se mantenha firme contra ti?",
+      "referencia": "2 Crônicas 20:6"
+    },
+    {
+      "texto": "Ó nosso Deus, não executarás julgamento contra eles? Pois não temos poder diante desta grande multidão que vem contra nós; e nós mesmos não sabemos o que devemos fazer, mas os nossos olhos estão voltados para ti.",
+      "referencia": "2 Crônicas 20:12"
+    },
+    {
+      "texto": "Ouvi-me, ó Judá e vós habitantes de Jerusalém! Depositai fé em Jeová, vosso Deus, para que vos mostreis de longa duração. Depositai fé nos seus profetas e mostrai-vos assim bem-sucedidos.",
+      "referencia": "2 Crônicas 20:20"
+    },
+    {
+      "texto": "Eu sou como tu. Meu povo é como teu povo. Meus cavalos são como teus cavalos.",
+      "referencia": "1 Reis 22:4"
+    },
+    {
+      "texto": "Por favor, consulta primeiro a palavra de Jeová.",
+      "referencia": "1 Reis 22:5"
+    },
+    {
+      "texto": "Não há aqui profeta de Jeová? Consultemos por meio dele.",
+      "referencia": "1 Reis 22:7"
+    },
+    {
+      "texto": "Não te disse eu: ‘Ele não profetizará boas coisas a meu respeito, mas más’?",
+      "referencia": "1 Reis 22:8"
+    }
+  ]
+},
+    {
+  "nome": "Gideão",
+  "falas": [
+    {
+      "texto": "Perdão, meu senhor, mas, se Jeová está conosco, por que nos aconteceu tudo isso? Onde estão todos os seus atos maravilhosos que nossos pais nos contaram, dizendo: ‘Não foi Jeová quem nos tirou do Egito’? Agora Jeová nos abandonou e nos entregou nas mãos de Midiã.",
+      "referencia": "Juízes 6:13"
+    },
+    {
+      "texto": "Perdão, Jeová. Como posso salvar Israel? Meu clã é o menos importante de Manassés, e eu sou o mais insignificante na casa do meu pai.",
+      "referencia": "Juízes 6:15"
+    },
+    {
+      "texto": "Se eu achei favor aos teus olhos, dá-me um sinal de que és tu quem fala comigo. Por favor, não te afastes daqui até que eu volte com a minha dádiva e a coloque diante de ti.",
+      "referencia": "Juízes 6:17-18"
+    },
+    {
+      "texto": "Ai de mim, Soberano Senhor Jeová, pois vi o anjo de Jeová face a face!",
+      "referencia": "Juízes 6:22"
+    },
+    {
+      "texto": "Se fores salvar Israel por meio de mim, assim como prometeste, vou colocar uma porção de lã na eira. Se houver orvalho somente na lã, mas todo o chão em volta ficar seco, então saberei que salvarás Israel por meio de mim, assim como prometeste.",
+      "referencia": "Juízes 6:36-37"
+    },
+    {
+      "texto": "Não se acenda a tua ira contra mim, mas deixa-me fazer só mais um pedido. Por favor, deixa-me fazer apenas mais uma prova com a lã. Por favor, que apenas a lã fique seca e haja orvalho em todo o chão.",
+      "referencia": "Juízes 6:39"
+    },
+    {
+      "texto": "Levantem-se, pois Jeová entregou o acampamento de Midiã nas suas mãos!",
+      "referencia": "Juízes 7:15"
+    },
+    {
+      "texto": "Olhem para mim e façam exatamente o que eu fizer.",
+      "referencia": "Juízes 7:17"
+    },
+    {
+      "texto": "Quando eu e todos os que estão comigo tocarmos a buzina, vocês também tocarão as suas buzinas ao redor de todo o acampamento e gritarão: ‘Por Jeová e por Gideão!’",
+      "referencia": "Juízes 7:18"
+    },
+    {
+      "texto": "O que foi que eu fiz em comparação com vocês? Não são as sobras de Efraim melhores do que a colheita de uvas de Abiezer? Foi nas mãos de vocês que Deus entregou Orebe e Zeebe, os príncipes de Midiã, e o que eu fiz em comparação com vocês?",
+      "referencia": "Juízes 8:2-3"
+    },
+    {
+      "texto": "Eu não reinarei sobre vocês, nem meu filho reinará sobre vocês. Jeová é quem reinará sobre vocês.",
+      "referencia": "Juízes 8:23"
+    },
+    {
+      "texto": "Vou lhes fazer um pedido: que cada um de vocês me dê do seu despojo uma argola para o nariz.",
+      "referencia": "Juízes 8:24"
+    }
+  ]
+},
     {
       "nome": "Daniel",
       "falas": [
