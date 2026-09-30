@@ -915,8 +915,10 @@
 
       soloFalaAtual = soloPersonagemCorreto.falas[indiceFala];
 
-      // Os outros 9 são personagens diferentes.
-      const opcoes = embaralhados.slice(0, 10);
+      // Seleciona o personagem correto + outros 9 personagens.
+      // Depois embaralha as 10 opções para que o correto nunca
+      // fique sempre na mesma posição.
+      const opcoes = embaralhar(embaralhados.slice(0, 10));
 
       document.getElementById("soloQuote").textContent =
         "“" + soloFalaAtual.texto + "”";
