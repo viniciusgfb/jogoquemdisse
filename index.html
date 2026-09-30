@@ -23,7 +23,11 @@
       --border: #ded5c6;
       --success: #477047;
       --success-bg: #edf5ed;
+      --danger: #8a3d3d;
+      --danger-bg: #f8eded;
     }
+
+    html { scroll-behavior: smooth; }
 
     body {
       margin: 0;
@@ -41,7 +45,10 @@
       padding: 34px 0 50px;
     }
 
-    header { text-align: center; margin-bottom: 28px; }
+    header {
+      text-align: center;
+      margin-bottom: 28px;
+    }
 
     h1 {
       margin: 0;
@@ -66,62 +73,46 @@
       box-shadow: 0 12px 35px rgba(60,45,25,.08);
     }
 
-    .rules-card { padding: 30px; margin-bottom: 18px; }
+    .home-card,
+    .rules-card,
+    .solo-card {
+      padding: 30px;
+    }
 
+    .home-card {
+      text-align: center;
+    }
+
+    .home-card h2,
     .rules-card h2 {
-      margin: 0 0 18px;
-      font-size: 28px;
-      text-align: center;
+      margin: 0 0 20px;
+      font-size: 29px;
     }
 
-    .rules {
-      margin: 0;
-      padding-left: 23px;
-      line-height: 1.7;
-      font-size: 17px;
+    .mode-buttons {
+      display: grid;
+      gap: 13px;
+      max-width: 520px;
+      margin: 0 auto;
     }
 
-    .rules li { margin-bottom: 9px; }
-
-    .start-card {
-      padding: 32px 24px;
-      text-align: center;
+    .mode-button {
+      width: 100%;
+      padding: 18px 22px;
+      font-size: 18px;
     }
 
-    .start-card p {
-      max-width: 650px;
-      margin: 0 auto 25px;
+    .mode-description {
+      margin: -5px 0 8px;
       color: var(--muted);
-      line-height: 1.65;
-    }
-
-    button {
-      border: 0;
-      border-radius: 12px;
-      padding: 14px 22px;
-      background: var(--accent);
-      color: white;
       font-family: Arial, sans-serif;
-      font-size: 16px;
-      font-weight: 700;
-      cursor: pointer;
-      transition: transform .15s, background .15s;
-    }
-
-    button:hover {
-      background: var(--accent-dark);
-      transform: translateY(-1px);
-    }
-
-    button.secondary {
-      background: transparent;
-      color: var(--accent-dark);
-      border: 1px solid var(--accent);
+      font-size: 13px;
+      line-height: 1.45;
     }
 
     .character-list-button {
       display: block;
-      margin: 16px auto 0;
+      margin: 18px auto 0;
       padding: 8px 12px;
       border: 0;
       background: transparent;
@@ -137,6 +128,56 @@
       text-decoration: underline;
     }
 
+    .rules-card {
+      margin-bottom: 18px;
+    }
+
+    .rules {
+      margin: 0;
+      padding-left: 23px;
+      line-height: 1.7;
+      font-size: 17px;
+    }
+
+    .rules li { margin-bottom: 9px; }
+
+    .rules-actions {
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+      flex-wrap: wrap;
+      margin-top: 20px;
+    }
+
+    button {
+      border: 0;
+      border-radius: 12px;
+      padding: 14px 22px;
+      background: var(--accent);
+      color: white;
+      font-family: Arial, sans-serif;
+      font-size: 16px;
+      font-weight: 700;
+      cursor: pointer;
+      transition: transform .15s, background .15s;
+      -webkit-tap-highlight-color: transparent;
+    }
+
+    button:hover {
+      background: var(--accent-dark);
+      transform: translateY(-1px);
+    }
+
+    button.secondary {
+      background: transparent;
+      color: var(--accent-dark);
+      border: 1px solid var(--accent);
+    }
+
+    button.secondary:hover {
+      background: #eee9df;
+    }
+
     .game-top {
       display: flex;
       justify-content: space-between;
@@ -146,7 +187,10 @@
       font-family: Arial, sans-serif;
     }
 
-    .counter { color: var(--muted); font-size: 14px; }
+    .counter {
+      color: var(--muted);
+      font-size: 14px;
+    }
 
     .character-card {
       padding: 28px 22px;
@@ -180,7 +224,10 @@
       text-align: center;
     }
 
-    .phrases { display: grid; gap: 12px; }
+    .phrases {
+      display: grid;
+      gap: 12px;
+    }
 
     .phrase {
       background: var(--card);
@@ -237,16 +284,145 @@
       margin-top: 20px;
     }
 
-    .actions .next-button { padding: 17px 28px; font-size: 17px; }
+    .actions .next-button {
+      padding: 17px 28px;
+      font-size: 17px;
+    }
 
-    .end-card { padding: 42px 25px; text-align: center; }
+    .end-card {
+      padding: 42px 25px;
+      text-align: center;
+    }
 
-    .end-card h2 { margin-top: 0; font-size: 35px; }
+    .end-card h2 {
+      margin-top: 0;
+      font-size: 35px;
+    }
 
     .end-card p {
       color: var(--muted);
       line-height: 1.6;
       margin-bottom: 25px;
+    }
+
+    /* MODO SOZINHO */
+
+    .scoreboard {
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+      margin: 0 auto 16px;
+      font-family: Arial, sans-serif;
+    }
+
+    .score {
+      min-width: 115px;
+      padding: 11px 15px;
+      border-radius: 12px;
+      text-align: center;
+      background: var(--card);
+      border: 1px solid var(--border);
+      font-size: 14px;
+    }
+
+    .score strong {
+      display: block;
+      margin-top: 3px;
+      font-size: 22px;
+    }
+
+    .solo-card {
+      text-align: center;
+    }
+
+    .solo-label {
+      color: var(--muted);
+      font-family: Arial, sans-serif;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      font-size: 11px;
+      margin-bottom: 18px;
+    }
+
+    .solo-quote {
+      margin: 0 auto;
+      max-width: 760px;
+      font-size: clamp(22px, 4.8vw, 31px);
+      line-height: 1.55;
+    }
+
+    .options-title {
+      margin: 26px 0 13px;
+      color: var(--muted);
+      font-family: Arial, sans-serif;
+      font-size: 14px;
+    }
+
+    .character-options {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 10px;
+      max-width: 650px;
+      margin: 0 auto;
+    }
+
+    .character-option {
+      background: var(--bg);
+      color: var(--text);
+      border: 1px solid var(--border);
+      padding: 15px 12px;
+    }
+
+    .character-option:hover {
+      background: #eee9df;
+      color: var(--text);
+      border-color: var(--accent);
+    }
+
+    .solo-result {
+      text-align: center;
+    }
+
+    .result-message {
+      margin: 0 0 18px;
+      padding: 15px 18px;
+      border-radius: 14px;
+      font-family: Arial, sans-serif;
+      font-weight: 700;
+      line-height: 1.5;
+    }
+
+    .result-message.correct {
+      color: var(--success);
+      background: var(--success-bg);
+      border: 1px solid #cbdcc9;
+    }
+
+    .result-message.wrong {
+      color: var(--danger);
+      background: var(--danger-bg);
+      border: 1px solid #e4c8c8;
+    }
+
+    .result-quote {
+      margin: 0 auto 20px;
+      font-size: 21px;
+      line-height: 1.6;
+    }
+
+    .result-character {
+      margin: 0 0 8px;
+      font-size: clamp(30px, 7vw, 45px);
+    }
+
+    .result-reference {
+      color: var(--accent);
+      font-family: Arial, sans-serif;
+      font-weight: 700;
+    }
+
+    .result-actions {
+      margin-top: 25px;
     }
 
     .error {
@@ -259,6 +435,8 @@
       font-family: Arial, sans-serif;
       line-height: 1.5;
     }
+
+    /* LISTA DE PERSONAGENS */
 
     .modal {
       position: fixed;
@@ -292,7 +470,10 @@
       margin-bottom: 18px;
     }
 
-    .modal-header h2 { margin: 0; font-size: 25px; }
+    .modal-header h2 {
+      margin: 0;
+      font-size: 25px;
+    }
 
     .close-button {
       padding: 7px 11px;
@@ -303,7 +484,10 @@
       line-height: 1;
     }
 
-    .close-button:hover { background: #eee9df; color: var(--text); }
+    .close-button:hover {
+      background: #eee9df;
+      color: var(--text);
+    }
 
     .character-list {
       margin: 0;
@@ -318,13 +502,16 @@
 
     @media (max-width: 600px) {
       .app { padding-top: 24px; }
-      .rules-card { padding: 23px 20px; }
+      .home-card, .rules-card, .solo-card { padding: 23px 20px; }
       .rules { font-size: 16px; }
       .character-card { padding: 25px 18px; }
       .phrase { padding: 18px; }
       .quote { font-size: 18px; }
       .game-top { align-items: flex-start; }
       .character-list { columns: 1; }
+      .character-options { grid-template-columns: 1fr; }
+      .scoreboard { gap: 8px; }
+      .score { min-width: 105px; }
     }
   </style>
 </head>
@@ -337,37 +524,53 @@
       <p class="subtitle">Um jogo de frases de personagens bíblicos</p>
     </header>
 
-    <!-- TELA INICIAL -->
-    <section id="startScreen" class="screen active">
+    <!-- PÁGINA INICIAL -->
+    <section id="homeScreen" class="screen active">
+      <div class="card home-card">
+        <h2>Escolha como jogar</h2>
 
+        <div class="mode-buttons">
+          <button id="groupModeButton" class="mode-button">Jogar com a galera</button>
+          <p class="mode-description">
+            Passe o celular de jogador em jogador e descubra quem disse cada frase.
+          </p>
+
+          <button id="soloModeButton" class="mode-button">Jogar sozinho</button>
+          <p class="mode-description">
+            Leia uma frase e escolha, entre 10 personagens, quem a disse.
+          </p>
+        </div>
+
+        <button id="characterListButton" class="character-list-button">
+          Ver personagens cadastrados
+        </button>
+      </div>
+    </section>
+
+    <!-- INSTRUÇÕES: JOGAR COM A GALERA -->
+    <section id="instructionsScreen" class="screen">
       <div class="card rules-card">
-        <h2>Como jogar</h2>
+        <h2>Jogar com a galera</h2>
 
         <ol class="rules">
           <li>Uma pessoa fica com o celular e é o <strong>leitor</strong> da rodada.</li>
           <li>O leitor vê o personagem e lê uma frase por vez, sem revelar quem é.</li>
           <li>Se alguém errar, o leitor lê outra frase para o próximo jogador.</li>
-          <li>Quem acertar marca <strong>1 ponto</strong>. Depois, começa uma nova rodada com outro personagem.</li>
+          <li>Quem acertar marca <strong>1 ponto</strong>. Depois, o celular passa para essa pessoa e começa uma nova rodada.</li>
         </ol>
+
+        <div class="rules-actions">
+          <button id="startGroupButton">Começar</button>
+          <button id="backHomeFromInstructions" class="secondary">Voltar</button>
+        </div>
       </div>
-
-      <div class="card start-card">
-        <p>
-          <strong>Dica:</strong> mantenha o celular voltado para o leitor para que os outros jogadores não vejam o personagem.
-        </p>
-
-        <button id="startButton">Iniciar jogo</button>
-        <button id="characterListButton" class="character-list-button">Ver personagens cadastrados</button>
-      </div>
-
     </section>
 
-    <!-- TELA DO JOGO -->
+    <!-- MODO JOGAR COM A GALERA -->
     <section id="gameScreen" class="screen">
-
       <div class="game-top">
-        <span id="counter" class="counter"></span>
-        <button id="restartButton" class="secondary">Recomeçar</button>
+        <span id="groupCounter" class="counter"></span>
+        <button id="groupRestartButton" class="secondary">Recomeçar</button>
       </div>
 
       <div class="card character-card">
@@ -376,7 +579,7 @@
       </div>
 
       <div class="instruction">
-        Você pode escolher qual frase vai ler primeiro. Toque em uma frase depois de lê-la para marcá-la como lida.
+        Toque em uma frase depois de lê-la para marcá-la como usada.
       </div>
 
       <div id="phrases" class="phrases"></div>
@@ -386,22 +589,83 @@
           Alguém acertou — próximo personagem
         </button>
       </div>
-
     </section>
 
-    <!-- FIM DA PARTIDA -->
+    <!-- FIM DO MODO GALERA -->
     <section id="endScreen" class="screen">
-
       <div class="card end-card">
         <h2>Fim da partida!</h2>
         <p>
           Todos os personagens disponíveis já foram utilizados.
-          Para começar uma nova partida, os personagens poderão ser sorteados novamente.
         </p>
 
-        <button id="playAgainButton">Jogar novamente</button>
+        <div class="rules-actions">
+          <button id="playAgainButton">Jogar novamente</button>
+          <button id="endToHomeButton" class="secondary">Página inicial</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- MODO JOGAR SOZINHO -->
+    <section id="soloScreen" class="screen">
+      <div class="game-top">
+        <span class="counter">Jogar sozinho</span>
+        <button id="soloRestartButton" class="secondary">Recomeçar</button>
       </div>
 
+      <div class="scoreboard">
+        <div class="score">
+          Acertos
+          <strong id="correctScore">0</strong>
+        </div>
+        <div class="score">
+          Erros
+          <strong id="wrongScore">0</strong>
+        </div>
+      </div>
+
+      <div class="card solo-card">
+        <div class="solo-label">Quem disse?</div>
+
+        <p id="soloQuote" class="solo-quote"></p>
+
+        <p class="options-title">Escolha o personagem:</p>
+
+        <div id="characterOptions" class="character-options"></div>
+      </div>
+    </section>
+
+    <!-- RESULTADO DO MODO SOZINHO -->
+    <section id="soloResultScreen" class="screen">
+      <div class="game-top">
+        <span class="counter">Jogar sozinho</span>
+        <button id="soloResultRestartButton" class="secondary">Recomeçar</button>
+      </div>
+
+      <div class="scoreboard">
+        <div class="score">
+          Acertos
+          <strong id="resultCorrectScore">0</strong>
+        </div>
+        <div class="score">
+          Erros
+          <strong id="resultWrongScore">0</strong>
+        </div>
+      </div>
+
+      <div class="card solo-card solo-result">
+        <div id="resultMessage" class="result-message"></div>
+
+        <p id="resultQuote" class="result-quote"></p>
+
+        <div class="character-label">Personagem correto</div>
+        <h2 id="resultCharacter" class="result-character"></h2>
+        <div id="resultReference" class="result-reference"></div>
+
+        <div class="result-actions">
+          <button id="nextSoloButton">Próxima frase</button>
+        </div>
+      </div>
     </section>
 
     <!-- LISTA DE PERSONAGENS -->
@@ -416,42 +680,57 @@
     </div>
 
     <div id="errorBox" class="error" hidden></div>
-
   </main>
 
   <script>
     /*
       QUEM DISSE?
-      Jogo estático preparado para GitHub Pages.
+      PWA / GitHub Pages
 
-      Estrutura esperada:
-        index.html
-        banco.json
-
-      O banco é carregado com fetch("banco.json").
+      Modos:
+      1. Jogar com a galera
+      2. Jogar sozinho
     */
 
     let personagens = [];
     let disponiveis = [];
 
-    const startScreen = document.getElementById("startScreen");
+    let soloPersonagemCorreto = null;
+    let soloFalaAtual = null;
+    let soloAcertos = 0;
+    let soloErros = 0;
+
+    const homeScreen = document.getElementById("homeScreen");
+    const instructionsScreen = document.getElementById("instructionsScreen");
     const gameScreen = document.getElementById("gameScreen");
     const endScreen = document.getElementById("endScreen");
+    const soloScreen = document.getElementById("soloScreen");
+    const soloResultScreen = document.getElementById("soloResultScreen");
+
     const errorBox = document.getElementById("errorBox");
     const characterModal = document.getElementById("characterModal");
     const characterList = document.getElementById("characterList");
 
     const characterName = document.getElementById("characterName");
     const phrases = document.getElementById("phrases");
-    const counter = document.getElementById("counter");
+    const groupCounter = document.getElementById("groupCounter");
 
     function mostrarTela(tela) {
-      [startScreen, gameScreen, endScreen].forEach(function(el) {
+      [
+        homeScreen,
+        instructionsScreen,
+        gameScreen,
+        endScreen,
+        soloScreen,
+        soloResultScreen
+      ].forEach(function(el) {
         el.classList.remove("active");
       });
 
       tela.classList.add("active");
-      window.scrollTo({ top: 0, behavior: "smooth" });
+
+      // Toda troca de "página" começa no topo.
+      window.scrollTo(0, 0);
     }
 
     async function carregarBanco() {
@@ -487,7 +766,24 @@
       }
     }
 
-    function iniciarJogo() {
+    /* ---------------------------
+       NAVEGAÇÃO
+    --------------------------- */
+
+    function voltarParaInicio() {
+      fecharListaPersonagens();
+      mostrarTela(homeScreen);
+    }
+
+    function abrirInstrucoes() {
+      mostrarTela(instructionsScreen);
+    }
+
+    /* ---------------------------
+       JOGAR COM A GALERA
+    --------------------------- */
+
+    function iniciarJogoGalera() {
       disponiveis = [...personagens];
 
       if (disponiveis.length === 0) {
@@ -508,6 +804,7 @@
       const personagem = disponiveis.splice(indice, 1)[0];
 
       renderizarPersonagem(personagem);
+      window.scrollTo(0, 0);
     }
 
     function renderizarPersonagem(personagem) {
@@ -524,7 +821,6 @@
         card.setAttribute("role", "button");
         card.setAttribute("tabindex", "0");
         card.setAttribute("aria-pressed", "false");
-        card.setAttribute("aria-label", "Marcar frase " + (index + 1) + " como lida");
 
         const number = document.createElement("div");
         number.className = "phrase-number";
@@ -545,15 +841,10 @@
         function alternarSelecionada() {
           const selecionada = card.classList.toggle("selected");
           card.setAttribute("aria-pressed", String(selecionada));
-          card.setAttribute(
-            "aria-label",
-            selecionada
-              ? "Frase " + (index + 1) + " marcada como lida"
-              : "Marcar frase " + (index + 1) + " como lida"
-          );
         }
 
         card.addEventListener("click", alternarSelecionada);
+
         card.addEventListener("keydown", function(event) {
           if (event.key === "Enter" || event.key === " ") {
             event.preventDefault();
@@ -567,16 +858,156 @@
       const total = personagens.length;
       const usados = total - disponiveis.length;
 
-      counter.textContent = "Personagem " + usados + " de " + total;
+      groupCounter.textContent =
+        "Personagem " + usados + " de " + total;
     }
+
+    /* ---------------------------
+       JOGAR SOZINHO
+    --------------------------- */
+
+    function iniciarJogoSozinho() {
+      if (personagens.length < 10) {
+        alert(
+          "O modo Jogar sozinho precisa de pelo menos 10 personagens cadastrados. " +
+          "Atualmente há " + personagens.length + "."
+        );
+        return;
+      }
+
+      soloAcertos = 0;
+      soloErros = 0;
+      atualizarPlacarSolo();
+
+      mostrarTela(soloScreen);
+      gerarPerguntaSolo();
+    }
+
+    function embaralhar(array) {
+      const copia = [...array];
+
+      for (let i = copia.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [copia[i], copia[j]] = [copia[j], copia[i]];
+      }
+
+      return copia;
+    }
+
+    function gerarPerguntaSolo() {
+      const embaralhados = embaralhar(personagens);
+
+      // O primeiro da lista será o personagem correto.
+      soloPersonagemCorreto = embaralhados[0];
+
+      if (
+        !soloPersonagemCorreto.falas ||
+        soloPersonagemCorreto.falas.length === 0
+      ) {
+        gerarPerguntaSolo();
+        return;
+      }
+
+      // Escolhe uma fala aleatória do personagem correto.
+      const indiceFala = Math.floor(
+        Math.random() * soloPersonagemCorreto.falas.length
+      );
+
+      soloFalaAtual = soloPersonagemCorreto.falas[indiceFala];
+
+      // Os outros 9 são personagens diferentes.
+      const opcoes = embaralhados.slice(0, 10);
+
+      document.getElementById("soloQuote").textContent =
+        "“" + soloFalaAtual.texto + "”";
+
+      const optionsContainer =
+        document.getElementById("characterOptions");
+
+      optionsContainer.innerHTML = "";
+
+      opcoes.forEach(function(personagem) {
+        const button = document.createElement("button");
+        button.className = "character-option";
+        button.textContent = personagem.nome;
+
+        button.addEventListener("click", function() {
+          responderSolo(personagem);
+        });
+
+        optionsContainer.appendChild(button);
+      });
+
+      atualizarPlacarSolo();
+      window.scrollTo(0, 0);
+    }
+
+    function responderSolo(personagemEscolhido) {
+      const acertou = personagemEscolhido.nome === soloPersonagemCorreto.nome;
+
+      if (acertou) {
+        soloAcertos++;
+      } else {
+        soloErros++;
+      }
+
+      mostrarResultadoSolo(acertou);
+    }
+
+    function mostrarResultadoSolo(acertou) {
+      const resultMessage = document.getElementById("resultMessage");
+
+      resultMessage.className =
+        "result-message " + (acertou ? "correct" : "wrong");
+
+      resultMessage.textContent = acertou
+        ? "Acertou! +1 ponto"
+        : "Errou! Veja a resposta correta.";
+
+      document.getElementById("resultQuote").textContent =
+        "“" + soloFalaAtual.texto + "”";
+
+      document.getElementById("resultCharacter").textContent =
+        soloPersonagemCorreto.nome;
+
+      document.getElementById("resultReference").textContent =
+        soloFalaAtual.referencia;
+
+      document.getElementById("resultCorrectScore").textContent =
+        soloAcertos;
+
+      document.getElementById("resultWrongScore").textContent =
+        soloErros;
+
+      mostrarTela(soloResultScreen);
+    }
+
+    function atualizarPlacarSolo() {
+      document.getElementById("correctScore").textContent = soloAcertos;
+      document.getElementById("wrongScore").textContent = soloErros;
+
+      document.getElementById("resultCorrectScore").textContent =
+        soloAcertos;
+
+      document.getElementById("resultWrongScore").textContent =
+        soloErros;
+    }
+
+    /* ---------------------------
+       LISTA DE PERSONAGENS
+    --------------------------- */
 
     function abrirListaPersonagens() {
       characterList.innerHTML = "";
 
       const nomes = personagens
-        .map(function(personagem) { return personagem.nome; })
+        .map(function(personagem) {
+          return personagem.nome;
+        })
         .sort(function(a, b) {
-          return a.localeCompare(b, "pt-BR", { sensitivity: "base" });
+          return a.localeCompare(b, "pt-BR", {
+            sensitivity: "base"
+          });
         });
 
       nomes.forEach(function(nome) {
@@ -593,21 +1024,57 @@
       characterModal.classList.remove("open");
     }
 
-    document
-      .getElementById("startButton")
-      .addEventListener("click", iniciarJogo);
+    /* ---------------------------
+       EVENTOS
+    --------------------------- */
 
     document
-      .getElementById("playAgainButton")
-      .addEventListener("click", iniciarJogo);
+      .getElementById("groupModeButton")
+      .addEventListener("click", abrirInstrucoes);
+
+    document
+      .getElementById("soloModeButton")
+      .addEventListener("click", iniciarJogoSozinho);
+
+    document
+      .getElementById("startGroupButton")
+      .addEventListener("click", iniciarJogoGalera);
+
+    document
+      .getElementById("backHomeFromInstructions")
+      .addEventListener("click", voltarParaInicio);
 
     document
       .getElementById("nextButton")
       .addEventListener("click", sortearProximoPersonagem);
 
+    // Recomeçar agora sempre leva para a página inicial.
     document
-      .getElementById("restartButton")
-      .addEventListener("click", iniciarJogo);
+      .getElementById("groupRestartButton")
+      .addEventListener("click", voltarParaInicio);
+
+    document
+      .getElementById("playAgainButton")
+      .addEventListener("click", iniciarJogoGalera);
+
+    document
+      .getElementById("endToHomeButton")
+      .addEventListener("click", voltarParaInicio);
+
+    document
+      .getElementById("soloRestartButton")
+      .addEventListener("click", voltarParaInicio);
+
+    document
+      .getElementById("soloResultRestartButton")
+      .addEventListener("click", voltarParaInicio);
+
+    document
+      .getElementById("nextSoloButton")
+      .addEventListener("click", function() {
+        mostrarTela(soloScreen);
+        gerarPerguntaSolo();
+      });
 
     document
       .getElementById("characterListButton")
@@ -617,15 +1084,6 @@
       .getElementById("closeCharacterList")
       .addEventListener("click", fecharListaPersonagens);
 
-    // Registra o Service Worker para permitir instalação e uso offline.
-    if ("serviceWorker" in navigator) {
-      window.addEventListener("load", function() {
-        navigator.serviceWorker.register("service-worker.js").catch(function(erro) {
-          console.warn("Service Worker não pôde ser registrado:", erro);
-        });
-      });
-    }
-
     characterModal.addEventListener("click", function(event) {
       if (event.target === characterModal) {
         fecharListaPersonagens();
@@ -633,10 +1091,25 @@
     });
 
     document.addEventListener("keydown", function(event) {
-      if (event.key === "Escape" && characterModal.classList.contains("open")) {
+      if (
+        event.key === "Escape" &&
+        characterModal.classList.contains("open")
+      ) {
         fecharListaPersonagens();
       }
     });
+
+    // Registro do Service Worker para o PWA.
+    if ("serviceWorker" in navigator) {
+      window.addEventListener("load", function() {
+        navigator.serviceWorker.register("service-worker.js").catch(function(erro) {
+          console.warn(
+            "Service Worker não pôde ser registrado:",
+            erro
+          );
+        });
+      });
+    }
 
     carregarBanco();
   </script>
