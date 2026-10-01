@@ -547,6 +547,21 @@
       </div>
     </section>
 
+    <!-- ESCOLHA DO BANCO: JOGAR SOZINHO -->
+    <section id="soloModeSelectScreen" class="screen">
+      <div class="card home-card">
+        <h2>Jogar sozinho</h2>
+        <div class="mode-buttons">
+          <button id="biblicalSoloButton" class="mode-button">Personagens bíblicos</button>
+          <p class="mode-description">Descubra qual personagem bíblico disse cada frase.</p>
+
+          <button id="modernSoloButton" class="mode-button">Tempos modernos</button>
+          <p class="mode-description">Descubra qual personagem dos tempos modernos disse cada frase.</p>
+        </div>
+        <button id="backHomeFromSoloSelect" class="secondary">Voltar</button>
+      </div>
+    </section>
+
     <!-- INSTRUÇÕES: JOGAR COM A GALERA -->
     <section id="instructionsScreen" class="screen">
       <div class="card rules-card">
@@ -693,6 +708,8 @@
     */
 
     let personagens = [];
+    let personagensModernos = [];
+    let bancoSoloAtual = [];
     let disponiveis = [];
 
     let soloPersonagemCorreto = null;
@@ -702,6 +719,7 @@
 
     const homeScreen = document.getElementById("homeScreen");
     const instructionsScreen = document.getElementById("instructionsScreen");
+    const soloModeSelectScreen = document.getElementById("soloModeSelectScreen");
     const gameScreen = document.getElementById("gameScreen");
     const endScreen = document.getElementById("endScreen");
     const soloScreen = document.getElementById("soloScreen");
@@ -718,6 +736,7 @@
     function mostrarTela(tela) {
       [
         homeScreen,
+        soloModeSelectScreen,
         instructionsScreen,
         gameScreen,
         endScreen,
@@ -735,34 +754,40 @@
 
     async function carregarBanco() {
       try {
-        const resposta = await fetch("banco.json", {
-          cache: "no-store"
-        });
+        const [respostaBiblia, respostaModerno] = await Promise.all([
+          fetch("banco.json", { cache: "no-store" }),
+          fetch("banco2.json", { cache: "no-store" })
+        ]);
 
-        if (!resposta.ok) {
-          throw new Error("Falha ao carregar banco.json");
-        }
+        if (!respostaBiblia.ok) throw new Error("Falha ao carregar banco.json");
+        if (!respostaModerno.ok) throw new Error("Falha ao carregar banco2.json");
 
-        const dados = await resposta.json();
+        const [dadosBiblia, dadosModernos] = await Promise.all([
+          respostaBiblia.json(),
+          respostaModerno.json()
+        ]);
 
-        if (!dados.personagens || !Array.isArray(dados.personagens)) {
+        if (!Array.isArray(dadosBiblia.personagens)) {
           throw new Error("Formato inválido do banco.json");
         }
-
-        personagens = dados.personagens;
-
-        if (personagens.length === 0) {
-          throw new Error("O banco não possui personagens.");
+        if (!Array.isArray(dadosModernos.personagens)) {
+          throw new Error("Formato inválido do banco2.json");
         }
 
+        personagens = dadosBiblia.personagens;
+        personagensModernos = dadosModernos.personagens;
+
+        if (!personagens.length) throw new Error("O banco.json não possui personagens.");
+        if (!personagensModernos.length) throw new Error("O banco2.json não possui personagens.");
+
+        errorBox.hidden = true;
       } catch (erro) {
         console.error(erro);
-
         errorBox.hidden = false;
         errorBox.innerHTML =
-          "<strong>Não foi possível carregar o banco de personagens.</strong><br>" +
-          "Verifique se o arquivo <strong>banco.json</strong> está na mesma pasta " +
-          "do index.html. No GitHub Pages isso funcionará automaticamente.";
+          "<strong>Não foi possível carregar os bancos de personagens.</strong><br>" +
+          "Verifique se <strong>banco.json</strong> e <strong>banco2.json</strong> " +
+          "estão na mesma pasta do index.html.";
       }
     }
 
@@ -866,11 +891,19 @@
        JOGAR SOZINHO
     --------------------------- */
 
-    function iniciarJogoSozinho() {
-      if (personagens.length < 10) {
+    function abrirEscolhaModoSozinho() {
+      mostrarTela(soloModeSelectScreen);
+    }
+
+    function iniciarJogoSozinho(tipoBanco) {
+      bancoSoloAtual = tipoBanco === "moderno"
+        ? personagensModernos
+        : personagens;
+
+      if (bancoSoloAtual.length < 10) {
         alert(
-          "O modo Jogar sozinho precisa de pelo menos 10 personagens cadastrados. " +
-          "Atualmente há " + personagens.length + "."
+          "Este modo precisa de pelo menos 10 personagens cadastrados. " +
+          "Atualmente há " + bancoSoloAtual.length + "."
         );
         return;
       }
@@ -878,7 +911,6 @@
       soloAcertos = 0;
       soloErros = 0;
       atualizarPlacarSolo();
-
       mostrarTela(soloScreen);
       gerarPerguntaSolo();
     }
@@ -895,7 +927,7 @@
     }
 
     function gerarPerguntaSolo() {
-      const embaralhados = embaralhar(personagens);
+      const embaralhados = embaralhar(bancoSoloAtual);
 
       // O primeiro da lista será o personagem correto.
       soloPersonagemCorreto = embaralhados[0];
@@ -1036,7 +1068,23 @@
 
     document
       .getElementById("soloModeButton")
-      .addEventListener("click", iniciarJogoSozinho);
+      .addEventListener("click", abrirEscolhaModoSozinho);
+
+    document
+      .getElementById("biblicalSoloButton")
+      .addEventListener("click", function() {
+        iniciarJogoSozinho("biblico");
+      });
+
+    document
+      .getElementById("modernSoloButton")
+      .addEventListener("click", function() {
+        iniciarJogoSozinho("moderno");
+      });
+
+    document
+      .getElementById("backHomeFromSoloSelect")
+      .addEventListener("click", voltarParaInicio);
 
     document
       .getElementById("startGroupButton")
