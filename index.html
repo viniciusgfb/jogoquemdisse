@@ -710,6 +710,7 @@
     let personagens = [];
     let personagensModernos = [];
     let bancoSoloAtual = [];
+    let quantidadeOpcoesSolo = 10;
     let disponiveis = [];
 
     let soloPersonagemCorreto = null;
@@ -896,14 +897,19 @@
     }
 
     function iniciarJogoSozinho(tipoBanco) {
-      bancoSoloAtual = tipoBanco === "moderno"
-        ? personagensModernos
-        : personagens;
+      if (tipoBanco === "moderno") {
+        bancoSoloAtual = personagensModernos;
+        quantidadeOpcoesSolo = 5;
+      } else {
+        bancoSoloAtual = personagens;
+        quantidadeOpcoesSolo = 10;
+      }
 
-      if (bancoSoloAtual.length < 10) {
+      if (bancoSoloAtual.length < quantidadeOpcoesSolo) {
         alert(
-          "Este modo precisa de pelo menos 10 personagens cadastrados. " +
-          "Atualmente há " + bancoSoloAtual.length + "."
+          "Este modo precisa de pelo menos " + quantidadeOpcoesSolo +
+          " personagens cadastrados. Atualmente há " +
+          bancoSoloAtual.length + "."
         );
         return;
       }
@@ -950,7 +956,7 @@
       // Seleciona o personagem correto + outros 9 personagens.
       // Depois embaralha as 10 opções para que o correto nunca
       // fique sempre na mesma posição.
-      const opcoes = embaralhar(embaralhados.slice(0, 10));
+      const opcoes = embaralhar(embaralhados.slice(0, quantidadeOpcoesSolo));
 
       document.getElementById("soloQuote").textContent =
         "“" + soloFalaAtual.texto + "”";
