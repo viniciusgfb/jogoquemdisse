@@ -1,6 +1,35 @@
 {
   "personagens": [
     {
+  "nome": "Cláudio Lísias",
+  "falas": [
+    {
+      "texto": "Então você não é o egípcio que algum tempo atrás atiçou uma sedição e levou os 4.000 assassinos para o deserto?",
+      "referencia": "Atos 21:38"
+    },
+    {
+      "texto": "Diga-me, você é romano?",
+      "referencia": "Atos 22:27"
+    },
+    {
+      "texto": "Eu comprei esses direitos de cidadão com muito dinheiro.",
+      "referencia": "Atos 22:28"
+    },
+    {
+      "texto": "O que você tem para me contar?",
+      "referencia": "Atos 23:19"
+    },
+    {
+      "texto": "Não diga a ninguém que você me contou isso.",
+      "referencia": "Atos 23:22"
+    },
+    {
+      "texto": "Aprontem 200 soldados, 70 cavaleiros e 200 lanceiros para irem até Cesareia à terceira hora da noite. Também, providenciem cavalos para Paulo montar, a fim de levá-lo em segurança a Félix, o governador.",
+      "referencia": "Atos 23:23, 24"
+    }
+  ]
+},
+    {
   "nome": "Neemias",
   "falas": [
     {
