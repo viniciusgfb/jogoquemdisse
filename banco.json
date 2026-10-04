@@ -30,6 +30,19 @@
   ]
 },
     {
+  "nome": "A jumenta de Balaão",
+  "falas": [
+    {
+      "texto": "O que lhe fiz para você me bater essas três vezes?",
+      "referencia": "Números 22:28"
+    },
+    {
+      "texto": "Não sou a jumenta em que você montou toda a sua vida até hoje? Já fiz isso com você alguma vez?",
+      "referencia": "Números 22:30"
+    }
+  ]
+},
+    {
   "nome": "Neemias",
   "falas": [
     {
